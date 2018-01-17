@@ -8,28 +8,71 @@
     height: 100vh;
 }
 
-.filters {
+.interests {
     height: 100%;
 }
 
 /* Estilos a la seccion de los filtros */
 
-.filters-section {
-    margin: 6em 0;
+.interests-section {
+    margin: 5.2em 0;
 }
 
-.filters-div {
+.interests-header {
+    background-color: #11135e;
+    color: #ffda4d;
+}
+
+.interests-header h1 {
+    margin: 0 0 1.68rem 0;
+    padding: 0.5em;
+    font-size: 3.8rem;
+}
+
+.interests-div {
     color: yellow;
     font-size: 1.8em;
-    line-height: 80px;
-    margin: 0 auto 1em;
-    width: 50%;
-    background-image: url(../assets/images/comedia.jpg);
-    background-position: center;
-    background-size: cover; 
-    background-repeat: no-repeat;
+    height: 4em;
+    margin: 0 1em 2em;
+    background-color: #11135e;
+    word-break: break-word;
+    justify-content: center;
 }
 
-.last-filter-div {
+.button-container {
+    margin-top: 4.2em;
+}
+
+.button-container .btn {
+    font-size: 1.3rem;
+    background-color: #34c1bb;
+    height: 40px;
     line-height: 40px;
+    padding: 0 2.2rem;
+}
+
+@media (min-width: 600px){
+    .interests-section {
+        margin: 7em 0;
+    }
+
+    .interests-div {
+        font-size: 1.9em;
+        height: 5em;
+        width: 90%;
+    }
+
+    .button-container {
+        margin-top: 4.5em;
+    }
+}
+
+@media (min-width: 992px) {
+    .interests-div {
+        font-size: 2em;
+    }
+
+    .button-container {
+        margin-top: 7em;
+    }
 }
