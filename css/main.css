@@ -39,6 +39,10 @@
     justify-content: center;
 }
 
+.interest-selected {
+    border: 3px solid #11139b;
+}
+
 .button-container {
     margin-top: 4.2em;
 }
