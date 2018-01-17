@@ -73,7 +73,7 @@ $(document).ready(function() {
   		firebase.database().ref('myUsersData/' + user.uid)
   		.set(myUser);
   	};
-    alert('hola mundo');
+    alert('hola mundo}');
 
   	// Leer Base de datos
   /*
