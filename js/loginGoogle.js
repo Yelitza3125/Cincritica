@@ -64,16 +64,16 @@ $(document).ready(function() {
       */
   	// Guardar información de los usuarios en  la base de datos
   	function saveDataUser(user) {
-  		var myUser = {
-  			uid: user.uid,
-  			name: user.displayName,
-  			email: user.email,
-  			photo: user.photoURL
+  	var myUser = {
+			 uid: user.uid,
+  		 name: user.displayName,
+  		 email: user.email,
+  		 photo: user.photoURL,
+      movieGeneros: {},
   		};
   		firebase.database().ref('myUsersData/' + user.uid)
   		.set(myUser);
-  	};
-    alert('hola mundo}');
+  	 };
 
   	// Leer Base de datos
   /*
