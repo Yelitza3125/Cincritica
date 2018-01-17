@@ -1,0 +1,35 @@
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+}
+
+.vh100 {
+    height: 100vh;
+}
+
+.filters {
+    height: 100%;
+}
+
+/* Estilos a la seccion de los filtros */
+
+.filters-section {
+    margin: 6em 0;
+}
+
+.filters-div {
+    color: yellow;
+    font-size: 1.8em;
+    line-height: 80px;
+    margin: 0 auto 1em;
+    width: 50%;
+    background-image: url(../assets/images/comedia.jpg);
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+.last-filter-div {
+    line-height: 40px;
+}
