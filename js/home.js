@@ -39,7 +39,7 @@ $(document).ready(function() {
   		});
   	// Redireccionamos a la vista interests
   	$('#next-view').on('click', function() {
-  	  window.location.href = 'intereses.html';
+  	  window.location.href = '../views/intereses.html';
   	});
 
   	// Funcion que cambia los datos default por los datos del usuario actual
