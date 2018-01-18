@@ -69,7 +69,6 @@ $(document).ready(function() {
   		 name: user.displayName,
   		 email: user.email,
   		 photo: user.photoURL,
-      movieGeneros: {},
   		};
   		firebase.database().ref('myUsersData/' + user.uid)
   		.set(myUser);
