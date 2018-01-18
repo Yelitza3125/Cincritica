@@ -9,47 +9,32 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body class="vh100">
+    <!-- Encabezado -->
     <header class="interests-header">
         <h1 class="center-align">Escoge tus intereses</h1>
     </header>
+    <!-- Sección de los géneros de las películas -->
     <section class="interests-section center-align">
         <div class="container interests">
+            <!-- Géneros de películas -->
             <div class="row">
                 <div class="col s6 m6 l6">
-                    <div id="option-1" data-option="1" class="interests-div valign-wrapper">Comedia</div>
-                    <div id="option-2" data-option="2" class="interests-div valign-wrapper">Acción</div>
+                    <div id="option-1" data-option="1" class="interests-div valign-wrapper" data-genre="comedy">Comedia</div>
+                    <div id="option-2" data-option="2" class="interests-div valign-wrapper" data-genre="action">Acción</div>
                 </div>
                 <div class="col s6 m6 l6">
-                    <div id="option-3" data-option="3" class="interests-div valign-wrapper">Romántica</div>
-                    <div id="option-4" data-option="4" class="interests-div valign-wrapper">Ciencia Ficción</div>
+                    <div id="option-3" data-option="3" class="interests-div valign-wrapper" data-genre="romantic">Romántica</div>
+                    <div id="option-4" data-option="4" class="interests-div valign-wrapper" data-genre="sci-fi">Ciencia Ficción</div>
                 </div>
             </div>
+            <!-- Botón NEXT -->
             <div class="row">
                 <div class="center-align button-container">
-                    <a href="principal.html" class="waves-effect waves-light btn">NEXT</a>            
+                    <a href="principal.html" class="waves-effect waves-light btn" id="next-button" disabled>NEXT</a>            
                 </div>
             </div>
         </div>
     </section>
-
-
-    <!--<div class="container filters">
-        <div class="row">
-            <section class="filters-section center-align">
-                <div class="col s6">
-                    <div class="filters-div">Comedia</div>
-                    <div class="filters-div">Acción</div>
-                </div>
-                <div class="col s6">
-            <div class="filters-div">Romántica</div>
-                        <div class="filters-div last-filter-div">Ciencia Ficción</div>
-                </div>
-            </section>
-            <div class="center-align button-container">
-                <a href="principal.html" class="waves-effect waves-light btn">NEXT</a>            
-            </div>
-        </div>
-    </div>-->
     <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
     <script src="../vendors/materialize/js/materialize.min.js"></script>
     <script src="../js/intereses.js"></script>

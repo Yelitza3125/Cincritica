@@ -1,0 +1,16 @@
+/* Vista principal */
+
+.image-div {
+    background-image: url('../assets/images/comedia.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20em;
+}
+
+.pulsing-button {
+    top: 245px;
+    margin-right: 1.3em;
+}
+
+
