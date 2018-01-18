@@ -1,8 +1,9 @@
 $(document).ready(function() {
   var $interestsOption1 = $('#option-1');
   var $interestsOptions = document.querySelectorAll('.interests-div');
-  var $genreObject = {genre: []}; 
   var $selection = $('.interests-div');
+  var $genreObject = {genre: []}; 
+  var $nextButton = $('#next-button');
   $selection.one('click', function() {
     var $thisOption = $(this).data('genre');
     $(this).addClass('interest-selected');
@@ -10,9 +11,12 @@ $(document).ready(function() {
     var $array = $genreObject.genre;
     $array.push($thisOption);
     console.log($genreObject);
+    $nextButton.removeAttr('disabled');
   });
+});
 
-  $selection.one('dblclick', function() {
+/*
+ $selection.one('dblclick', function() {
     debugger;
     var $thisOption = $(this).data('genre');
     $(this).removeClass('interest-selected');
@@ -20,4 +24,4 @@ $(document).ready(function() {
     $array.indexOf($thisOption);
     console.log($thisOption);
   });
-});
+*/ 
