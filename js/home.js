@@ -1,7 +1,7 @@
 $(document).ready(function() {
   // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
   $('.modal').modal();
-  
+
   // Inicializando Firebase
   var config = {
     apiKey: "AIzaSyAk-IzoOuu3mhEJTU8vR6fFITla-MBzA1k",
@@ -12,10 +12,10 @@ $(document).ready(function() {
     messagingSenderId: "510323267571"
   };
   firebase.initializeApp(config);
-  
+
   var provider = new firebase.auth.GoogleAuthProvider();
   provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
-  
+
   // Evento que por medio  de un pop-up te permite acceder con tu cuenta de  google
   $('#btn-signup').click(
     function signUp() {
@@ -26,7 +26,7 @@ $(document).ready(function() {
           saveDataUser(user);
           console.log(user.displayName);
           console.log(user.photoURL);
-  
+
           // Extraemos los datos de usuario para el modal de registro exitoso
           $('#btn-modal').addClass('trying');
           $('#btn-modal').attr('data-toggle', 'modal');
@@ -34,14 +34,14 @@ $(document).ready(function() {
           $('#btn-modal').trigger('click');
           $('#your-name').text(user.displayName);
           $('#your-email').text(user.email);
-          $('#your-photo').append('<img class="img-responsive" src="' + user.photoURL + '"/>');
+          $('#your-photo').append('<img style="width50%;" src="' + user.photoURL + '"/>');
         });
     });
   // Redireccionamos a la vista interests
   $('#next-view').on('click', function() {
     window.location.href = '../views/intereses.html';
   });
-  
+
   // Funcion que cambia los datos default por los datos del usuario actual
   /*
         $('#min-photo-user').on('click', function () {
@@ -52,7 +52,7 @@ $(document).ready(function() {
             $('#user-email').text(user.email);
             console.log(user.displayName)
         });
-  
+
         // Escribiendo en la base de datos directamente
             $('#btn-modal').click(function(){
                 firebase.database().ref('trying')
@@ -74,7 +74,7 @@ $(document).ready(function() {
     firebase.database().ref('myUsersData/' + user.uid)
       .set(myUser);
   };
-  
+
   // Leer Base de datos
   /*
         firebase.database().ref('myUsersData')
@@ -84,4 +84,3 @@ $(document).ready(function() {
         });
       */
 });
-  
