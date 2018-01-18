@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" 
+    href="../vendors/materialize/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+     rel="stylesheet">
+    <link rel="stylesheet" href="../css/sign-up.css">
+    <title>Sign-up</title>
+</head>
+<body>
+  <!-- Registro -->
+  <div class="row">
+    <div class="col s12 m4 l6 valign-wrapper logo-container hide-on-small-only"> 
+      <img src="../assets/images/logotipo/logo.png" alt="cincritica" class="logo">
+      <h5 class="center-align white-text space-up space-down logo-text">
+        Opinión sin efectos secundarios
+      </h5>
+      <div class="icons-container space-up center-align">
+        <!--
+        <div>
+        <img src="../assets/images/vectores/pop-corn.png" alt="" class="icons-movie-pop">
+      </div> -->
+        <div>
+          <img src="../assets/images/vectores/camara.png" alt="camara" class="icons-movie-camara">
+        </div>
+      <!--
+      <div>
+        <img src="../assets/images/vectores/claqueta.png" alt="" class="icons-movie-claqueta">
+      </div> -->
+      </div>  
+    </div>
+    
+    <div class="col s11 m8 l5 card-panel"> 
+      <form class="space-up">
+        <div class="row">
+          <div class="col l12">
+            <img src="../assets/images/logotipo/logo-fondo-blanco.png" alt="cincritica" class=" hide-on-med-and-up logo">
+            <h5 class="center-align green-color text-form">Completa tus datos para continuar.</h5>
+          </div>
+        </div>  
+        <div class="row">     
+          <div class="input-field col s6">
+            <input id="first_name" type="text" class="validate">
+            <label for="first_name">Nombre</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Apellido</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="nickname" type="text" class="validate">
+            <label for="nickname" class="">Nickname (Números y letras, sin espacios)</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate">
+            <label for="email" class="">E-mail</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="password" type="password" class="validate">
+            <label for="password">Contraseña (mínimo 6 dígitos)</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12 ">
+            <input id="confirm-password" type="password" class="validate">
+            <label for="password">Confirmar contraseña</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s10 push-s1 col m10 push-m2 col l8 push-l3">
+            <form action="#">
+              <p>
+                <input type="checkbox" class="filled-in" id="filled-in-box">
+                <label for="filled-in-box">Acepto los términos y condiciones</label>
+              </p>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="center">
+            <button class="btn waves-effect waves-light btn-sign-up border-radius" type="submit" name="action" disabled="">Crear
+            <i class="material-icons right">movie</i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>  
+          <!-- Fin de Registro -->
+    <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../vendors/materialize/js/materialize.min.js"></script>
+    <script src="../js/sign-up.js"></script>
+</body>
+</html>
