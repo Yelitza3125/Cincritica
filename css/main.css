@@ -8,18 +8,39 @@
   height: 100vh !important;
 }
 
+.row {
+  margin-bottom: 0 !important;
+}
+
 .maxwidth100{
   max-width: 100%;
   height: auto;
 }
 
-.img-container {
-  margin-top: 5em;
-  width: 80%;
+.back-color-white {
+  background-color: #fff !important;
 }
 
-.img-width {
-  width: 80%;
+/* Estilo de la imagen */
+
+.img-container {
+  width: 60% !important;
+}
+
+.vh40 {
+  height: 40vh;
+}
+
+.width70 {
+  width: 70%;
+}
+
+.width50 {
+  width: 50% !important;
+}
+
+.width20 {
+  width: 20%;
 }
 
 .display-flex {
@@ -55,6 +76,10 @@
   color: #34c1bb;
 }
 
+.back-img {
+  background-size: contain !important;
+  background-repeat: no-repeat !important; 
+}
 /* Mobile */
 
 .vh50 {
