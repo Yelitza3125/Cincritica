@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cincritica Filters</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/icons/logo.png">
+  <!-- Framework Materialize CSS -->
+  <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+  <!-- Iconos de Materialize -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="bg-cc"> 
+  <!-- Cabecera, menú hamburguesa -->
+  <nav class="navCollapsible">
+    <div class="nav-wrapper bg-bd">
+      <a href="#!" class="brand-logo">Inicio</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Nombre y Apellido</a></li>
+        <li><a href="#">Configuración</a></li>
+        <li><a href="#">Cerrar Sesión</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+          <li><div class="user-view">
+              <div class="background">
+                <img src="../assets/images/flat.jpg">
+              </div>
+              <a href="#!user"><img class="circle" src="../assets/images/flat.jpg"></a>
+              <a href="#!name"><span class="name t-g">Carlos Cueva</span></a>
+              <a href="#!email"><span class="email t-g">carlos@gmail.com</span></a>
+            </div></li>
+        <li><a href="#">Configuración</a></li>
+        <li><a href="#">Cerrar Sesión</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--SECCTION SLIDER principal genero de la pelicula seleccionada-->
+  <section class="genero">
+    <div class="row">
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="../assets/images/filters/ciencia.jpg"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="../assets/images/filters/ciencia1.jpg"> <!-- random image -->
+            <div class="caption left-align">
+              <h3>Left Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="../assets/images/filters/ciencia2.jpg"> <!-- random image -->
+            <div class="caption right-align">
+              <h3>Right Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!--SECTION TABS (TOP/ OTROS/ RECOMENDAR)-->
+  <section class="publications">
+    <div class="row">
+      <ul id="tabs-swipe-demo" class="tabs">
+        <li class="tab col s6"><a href="#test-swipe-1">TOP 10</a></li>
+        <li class="tab col s6"><a class="active" href="#test-swipe-2">RECOMENDADOS</a></li>
+        <!-- <li class="tab col s3"><a href="#test-swipe-3">Test 3</a></li> -->
+      </ul>
+      <div id="test-swipe-1" class="col s12 black">TOP 10
+        <div class="row">
+          <div class="col s12 offset-m3 m6">
+            <div class="card">
+              <div class="header">
+                <div class="col s2 center-align">
+                  <img src="../assets/images/filters/top/t1.jpg" alt="" class="responsive-img">
+                </div>
+                <div class="col s10">
+                  <h5><strong>BLADE RUNNER</strong></h5>
+                  <p>2017</p>
+                  <p>Top: <img src="..assets/images/filters/feed/1.jpg"></p>  
+                </div>
+                <div class="Button">
+                  <button class="btn rosa waves-effect waves-light pulse" type="submit" name="action">Recomienda</button>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="test-swipe-2" class="col s12 red">RECOMENDADOS
+      </div>
+      <!-- <div id="test-swipe-3" class="col s12 green">Test 3
+      </div> -->
+  <!-- Libreria JQuery -->
+  <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+  <!-- JS Materialize -->
+  <script src="../vendors/materialize/js/materialize.min.js"></script>
+  <!-- Libreria de Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <!-- Referencias de conexión con Firebase -->
+  <script src="../js/conexion.js"></script>
+  <!-- JS NAV ICON -->
+  <script src="../js/navIcon.js"></script>
+  <!-- JS personalizado -->
+  <script src="../js/filters.js"></script>
+</body>
+</html>
