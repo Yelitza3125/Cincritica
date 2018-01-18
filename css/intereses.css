@@ -1,0 +1,92 @@
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+}
+
+.vh100 {
+    height: 100vh;
+}
+
+.interests {
+    height: 100%;
+}
+
+/* Estilos a la seccion de los filtros */
+
+.interests-section {
+    margin: 5.2em 0;
+}
+
+.interests-header {
+    background-color: #11135e;
+    color: #ffda4d;
+}
+
+.interests-header h1 {
+    margin: 0 0 1.68rem 0;
+    padding: 0.5em;
+    font-size: 3.8rem;
+}
+
+.interests-div {
+    color: yellow;
+    font-size: 1.8em;
+    height: 4em;
+    margin: 0 1em 2em;
+    background-color: #11135e;
+    word-break: break-word;
+    justify-content: center;
+}
+
+.interest-selected {
+    background-color: #11139b;
+}
+
+.button-container {
+    margin-top: 4.2em;
+}
+
+.button-container .btn {
+    font-size: 1.3rem;
+    background-color: #34c1bb;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 2.2rem;
+}
+
+@media (min-width: 600px){
+    .interests-section {
+        margin: 7em 0;
+    }
+
+    .interests-div {
+        font-size: 1.9em;
+        height: 5em;
+        width: 90%;
+    }
+
+    .button-container {
+        margin-top: 4.5em;
+    }
+}
+
+@media (min-width: 992px) {
+    .interests-div {
+        font-size: 2em;
+    }
+
+    .button-container {
+        margin-top: 7em;
+    }
+}
+
+/* Estilos de la Vista Principal */
+
+.slider .slides li .principal-slide-2 {
+    background-position: top;
+}
+
+.slider .slides li .principal-slide-1 {
+    background-position: bottom;
+}
