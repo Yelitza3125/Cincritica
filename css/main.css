@@ -8,12 +8,10 @@
   height: 100vh !important;
 }
 
-
 .maxwidth100{
   max-width: 100%;
   height: auto;
 }
-
 
 .img-container {
   margin-top: 5em;
@@ -22,14 +20,13 @@
 
 .img-width {
   width: 80%;
-} 
+}
 
 .display-flex {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .font-size {
@@ -80,4 +77,3 @@
 .img-corn-mobile {
   width: 50%;
 }
-
