@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- CSS Personalizado -->
   <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/filters.css">
 </head>
 <body class="bg-cc"> 
   <!-- Cabecera, menú hamburguesa -->
@@ -40,26 +41,26 @@
     </div>
   </nav>
   <!--SECCTION SLIDER principal genero de la pelicula seleccionada-->
-  <section class="genero">
+  <!-- <section class="genero">
     <div class="row">
       <div class="slider">
         <ul class="slides">
           <li>
-            <img src="../assets/images/filters/feed/cin.jpg"> <!-- random image -->
+            <img src="../assets/images/filters/feed/cin.jpg"> 
             <div class="caption center-align">
               <h3>This is our big Tagline!</h3>
               <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
             </div>
           </li>
           <li>
-            <img src="../assets/images/filters/ciencia1.jpg"> <!-- random image -->
+            <img src="../assets/images/filters/ciencia1.jpg"> 
             <div class="caption left-align">
               <h3>Left Aligned Caption</h3>
               <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
             </div>
           </li>
           <li>
-            <img src="../assets/images/filters/ciencia2.jpg"> <!-- random image -->
+            <img src="../assets/images/filters/ciencia2.jpg"> 
             <div class="caption right-align">
               <h3>Right Aligned Caption</h3>
               <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
@@ -68,32 +69,33 @@
         </ul>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!--SECTION TABS (TOP/ OTROS/ RECOMENDAR)-->
   <section class="publications">
     <div class="row">
       <ul id="tabs-swipe-demo" class="tabs">
-        <li class="tab col s6"><a href="#test-swipe-1">TOP 10</a></li>
-        <li class="tab col s6"><a class="active" href="#test-swipe-2">DESCUBRE</a></li>
-        <!-- <li class="tab col s3"><a href="#test-swipe-3">Test 3</a></li> -->
+        <li class="tab col s6"><a class="active" href="#test-swipe-1">TOP 10</a></li>
+        <li class="tab col s6"><a href="#test-swipe-2">DESCUBRE</a></li>
       </ul>
       <div id="test-swipe-1" class="col s12 white">
         <div class="row">
           <div class="col s12 offset-m3 m6">
             <div class="card">
               <div class="header">
-                <div class="col s2 center-align">
+                <div class="col s3 center-align">
                   <img src="../assets/images/filters/top/t1.jpg" alt="" class="responsive-img">
                 </div>
-                <div class="col s10">
+                <div class="col s6">
                   <h5><strong>BLADE RUNNER</strong></h5>
-                  <p>2017</p>
-                  <p>Top: <img src="..assets/images/filters/feed/cin.jpg"></p>  
+                  <ul>
+                    <li><b>Estreno:</b> 2017 - 2hr</li>
+                    <li><b>Top:</b><img class="top" src="../assets/images/filters/feed/1.png"></li>
+                  </ul> 
                 </div>
-                <!-- <div class="Button">
-                  <button class="btn rosa waves-effect waves-light pulse" type="submit" name="action">Recomienda</button>
-                </div> -->
+                <div class="col s3">
+                  <img src="../assets/images/filters/feed/top.png" alt="" class="responsive-img">
+                </div>
               </div> 
             </div>
           </div>
@@ -105,13 +107,13 @@
             <div class="card">
               <div class="card-image">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaDZoaTPmRm4pijO3IVIvG5YnqpjQ0eKCWubTtyoMoMeDVdHiR">
-                <span class="card-title">Titulo pelicula</span>
+                <span class="card-title"><strong>Titulo pelicula</strong></span>
                 <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">play_arrow</i></a>
               </div>
               <div class="card-content">
-                <p>Año: 2017</p>
-                <p>Duración: 2h 20min</p>
-                <P>Calificación: estrellitas</P>
+                <p><b>Año:</b> 2017</p>
+                <p><b>Duración:</b> 2h 20min</p>
+                <P><b>Calificación:</b> estrellitas</P>
                 <br>
                 <p>SINOPSIS: I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
               </div>
@@ -119,8 +121,6 @@
           </div>
         </div>
       </div>
-      <!-- <div id="test-swipe-3" class="col s12 green">Test 3
-      </div> -->
   <!-- Libreria JQuery -->
   <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
   <!-- JS Materialize -->
