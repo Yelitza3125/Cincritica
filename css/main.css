@@ -80,3 +80,9 @@
         margin-top: 7em;
     }
 }
+
+/* Estilos de la Vista Principal */
+
+.slider {
+    background-position: top;
+}
