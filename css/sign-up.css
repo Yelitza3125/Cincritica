@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Clases generales*/
+
+.space-up {
+    margin-top: 2em;
+}
+
+.space-down {
+    margin-bottom: 2em;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #11135e;
+}
+
+.blue-color {
+    color: #11135e;
+}
+
+.green-color {
+    color: #34c1bb;
+}
+
+.yellow-color {
+    color: #ffda4d;
+}
+
+/*Estilo del contenedor del formulario */
+
+.card-panel {
+    margin-top: 3em !important;
+    margin-bottom: 2em !important;
+    margin: auto;
+    width: 40%;
+    border: 8px solid #ffda4d;
+    padding: 2em;
+}
+
+
+/* Estilo del logotipo */
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.logo {
+    width: 60%;
+    cursor: pointer;
+}
+
+
+/*Iconos */
+
+.icons-container {
+    display: flex;
+}
+
+.icons-container div {
+    width: 150px;
+}
+.icons-movie-pop {
+    width: 30%;
+}
+
+.icons-movie-camara {
+    width: 50%;
+}
+
+.icons-movie-claqueta {
+    width: 50%;
+}
+
+
+
+/* colores
+#11135e
+#2d3157
+#34c1bb
+#badccc
+#ffda4d
+
+
+
+/* Navbar 
+
+.nav-extended {
+    z-index: 999999999;
+}
+
+.nav-wrapper {
+    margin: 0 30px
+}
+
+
+/* Fin Navbar 
+
+.slider .slides li .caption {
+    top: 30%;
+}
+
+.slidessize img {
+    opacity: 0.6;
+} */
+
+
+
+.material-icons {
+    font-size: 60px;
+    color: #34c1bb;
+}
+
+/* Botón de envío de formulario */
+.btn-sign-up {
+    background-color: #11135e;
+    color: #34c1bb;
+    border-radius: 10px;
+}
+
+/*
+.callout {
+    position: relative;
+    z-index: 10;
+    top: 80%;
+} */
+
+
+
+@media (max-width: 600px) {
+
+    .card-panel {
+        margin-left: 1.5em !important;
+    }
+    .logo-container {
+        height: 50vh;
+        margin-top: 2em;
+    }
+
+    .logo-text {
+        font-size: 1.5em;
+    }
+
+    .logo {
+        width:80%;
+        margin-left: 3em;
+    }
+
+    .text-form {
+        color: #11135e;
+        margin-top: 2em;
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 812px) and (orientation: landscape),
+only screen and (max-width: 700px) and (orientation: portrait) {
+    .caption {
+        zoom: .7;
+    }
+    .waves-effect {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 993px) {
+    .card-panel {
+        margin: auto;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    nav .brand-logo {
+        left: 50%;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /*
+      .card-panel {
+          border-radius: 20px;
+      } */
+}

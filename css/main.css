@@ -1,14 +1,32 @@
 /*clases generales*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .vh100{
   height: 100vh;
 }
-.displayblock{
-  display: block;
-}
+
+
 .maxwidth100{
   max-width: 100%;
   height: auto;
 }
-.margintop4em{
-  margin-top: 4em;
+
+
+.img-container {
+  width: 40%;
+}
+/*
+.img-width {
+  width: 100%;
+} */
+
+.display-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
