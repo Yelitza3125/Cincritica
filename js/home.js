@@ -2,6 +2,21 @@ $(document).ready(function() {
   // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
   $('.modal').modal();
 
+
+  $('#nicknameinput').keyup(function(){
+   nickNameValid();
+  });
+
+
+
+  function nickNameValid() {
+    if ($('#nicknameinput').val().length >= 4 && !($('#nicknameinput').val().match(/^\s+|\s+$/)) === true) {
+      $('#next-view').prop('disabled', false);
+    } else {
+      alert('Tu nickname no debe tener espacios.') ;
+    }
+  }
+
   // Inicializando Firebase
   var config = {
     apiKey: "AIzaSyAk-IzoOuu3mhEJTU8vR6fFITla-MBzA1k",
@@ -37,8 +52,11 @@ $(document).ready(function() {
           $('#your-photo').append('<img style="width50%;" src="' + user.photoURL + '"/>');
         });
     });
+
   // Redireccionamos a la vista interests
   $('#next-view').on('click', function() {
+    var nicknameUser = $('#nicknameinput').val();
+    localStorage.setItem('nickname_google', nicknameUser);
     window.location.href = '../views/intereses.html';
   });
 
