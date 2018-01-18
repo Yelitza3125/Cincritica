@@ -24,4 +24,4 @@ $(document).ready(function() {
     $array.indexOf($thisOption);
     console.log($thisOption);
   });
-*/ 
+*/
