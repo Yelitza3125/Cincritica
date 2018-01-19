@@ -23,21 +23,66 @@ Antes de seguir con la documentación, es importante conocer la siguiente defini
 - Definición del número de vistas.
 - Definición del flujo del producto.
 - Prototipado
+- Elección del nombre del producto.
+
+#####Lista de tareas: 
+
+- Aracely Gutarra: Investigación de la API Open Movie Database
+- Pamela Rojas: Investigación de la API Open Movie Database
+- Brenda Mesías: Investigación de la API de YouTube e investigación de la autenticación con Google.
+- Yelitza Cisneros: Elaboración de propuesta de logotipo y paleta de colores.
 
 **Miércoles 17 de Enero**
 
-- Vista splash.
-- Culminación de formularios.
-- Maquetación de la vista de selección de géneros.
-- Conexión a Firebase.
+Yelitza Cisneros: 
+- Maquetación y estilos de la vista "Sign up", "Home" y "Splash" (slider). 
+- Validación del formulario de registro sin  Google
 
+
+Aracely Gutarra: 
+- Extracción de la data de API Open Movie Database
+- Primera maquetación de la vista "Intereses".
+- Funcionalidad de la vista "intereses".
+- Maquetación inicial de la vista "principal"
+
+Brenda Mesías: 
+- Vinculación para el registro de Google mediante Firebase.
+
+Pamela de la Cruz:
+- Extracción de la data de API Open Movie Database, para la vista "filters".
+- Funcionalidad de la vista "filters"
+
+
+**Jueves 18 de Enero**
+
+Yelitza Cisneros:
+- Maquetación y estilos de la vista "Log In" y guardado de datos del usuario en localStorage.
+- Maquetación y estilos de la vista "Intereses".
+
+Brenda Mesías:
+- Maquetación y estilo de la vista "principal".
+- Guardado del nickname del usuario en localStorage para la vista "principal".
+
+Aracely Gutarra:
+- Funcionalidad de la vista "intereses" (filtrado de selección).
+- Funcionalidad de la vista "principal".
+- Utilización de jQuery Raty | A Star Rating Plugin, para la calificación mediante estrellas del usuario.
+
+Pamela de la Cruz:
+- Funcionalidad de la vista "filters", a través del filtrado del API Open Movie Database.
+- Utilización de jQuery Raty | A Star Rating Plugin, para la calificación mediante estrellas del usuario.
 
 ## User Research
 
 Realizamos dos encuestas virtuales. La primera para conocer las motivaciones, gustos y modos de actuar de los posibles usuarios al momento de ver películas.
 
 ### Primera encuesta
+Link de la encuesta: 
+https://docs.google.com/spreadsheets/d/1GSYrLo6JlDa2eOdUQybpmWgU2rz3L4uCAgXFHdF9cK8/edit?usp=forms_web_b#gid=2038668038
+
+
 Se realizó a 34 personas y obtuvimos los siguientes resultados:
+
 
 **Géneros preferidos**
 ![logo](assets/images/encuestas/generos.jpg)
@@ -52,6 +97,9 @@ Se realizó a 34 personas y obtuvimos los siguientes resultados:
 ![logo](assets/images/encuestas/opinion.jpg)
 
 ### Segunda encuesta
+
+Link de la encuesta: 
+https://docs.google.com/spreadsheets/d/1DlYl4HspP5_HCBH-cPMMcVhUPCSKpHTepqwsviYJgIQ/edit?usp=forms_web_b#gid=12016895
 
 Se realizó a 18 personas, y se centró en sus gustos sobre las críticas de cine. Las respuestas fueron las siguientes.
 
@@ -148,22 +196,21 @@ Además mostraremos la información necesaria sobre las películas, filtradas de
 
 #### 1. Vista Splash: 
 
-Slider de imágenes referentes al programa
+Slider de imágenes y textos, que dan una breve explicación al usuario sobre la aplicación.
 
 
 #### 2. Vista Home: 
 
-Información sobre la aplicación y los botones de "sign up", "log in" y conectarse con Google
+Información sobre la aplicación y a través de botones, redirecciona al usuario a registrarse por primera vez o ingresar si ya tiene una cuenta.
 
 
 #### 3. Vista Sign up:
 Formulario de creación de cuenta desde cero. Requiere el llenado de datos personales, un nickname, un correo y una contraseña.
+Si la persona se registra con Google, por medio de un modal se le pedirá que ingrese un nickname.
 
-#### 4. Vista google:
-Formulario para elegir un nickname si la persona se registró via Google
 
-#### 5. Vista géneros:
-Vista donde la persona elige los géneros de películas sobre los que quiere calificar y/o recibir información. El producto ofrece elegir entre los siguientes 4 géneros:
+#### 5. Vista Intereses:
+Vista donde la persona elige los géneros de películas sobre los que quiere calificar y/o recibir información. El producto le ofrece al usuario elegir entre los siguientes 4 géneros:
 
 - Acción
 - Romance
@@ -171,13 +218,14 @@ Vista donde la persona elige los géneros de películas sobre los que quiere cal
 - Comedia
 
 
-#### 6. Perfil.
-Una vez que el usuario seleccionó sus géneros preferidos, recibe la información filtrada. Además de un top 10 por género.
+#### 6. Vista principal:
+Una vez que el usuario seleccionó sus géneros preferidos, recibe información de películas basado en el filtrado realizado.
 
 
-#### 7. Géneros elegidos:
+#### 7. Vista filtros:
 
-Si la persona da "click" en unos de los géneros de su perfil le mostrará las películas de dicho género, donde a través de una modal se muestra la información extra. Además tendrá un botón para "calificar" la película según cuatro criterios:
+En la vista principal, hay un botón para acceder al top 10 del género elegido.
+Se accederá a otra vista donde se muestra el top 10 de las películas de aquel género. Además el usuario puede calificar las películas de acuerdo a:
 
 - Historia
 - Efectos especiales
