@@ -139,7 +139,6 @@ $(document).ready(function() {
     });
   });
   // Calificación de Estrellas del Cuarto Modal
-  // Calificación de Estrellas del Primer Modal
   $(function() {
     $('#rateYo-3-1').rateYo({
       starWidth: '20px',
