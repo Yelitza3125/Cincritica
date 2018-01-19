@@ -1,15 +1,42 @@
 /* Vista principal */
 
+.genre-title {
+    border-bottom: 3px solid black;
+    padding-bottom: 0.15em;
+    font-size: 3.8rem;
+}
+
+.arrow-right-button {
+    top: 160px;
+}
+
+/*.new-carousel-content {
+    display: none;
+}
+
+.new-carousel-content.active {
+    display: inline-block;
+}*/
+
+.card .card-content {
+    padding: 10px;
+    word-break: break-word;
+}
+
+/* Contenedor de la imagen */
+
 .image-div {
     background-image: url('../assets/images/comedia.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 20em;
+    margin-bottom: 1.5em;
 }
 
+/* Botón del modal */
 .pulsing-button {
-    top: 245px;
+    top: 250px;
     margin-right: 1.3em;
 }
 

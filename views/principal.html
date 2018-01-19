@@ -54,17 +54,16 @@
     </div>
     <section>
         <div class="container">
-            <div class="row">
-                <div class="col s12">
-                    <h1>Ciencia Ficción</h1>
+            <div class="row" id="row-0-1">
+                <div class="col s12" id="col-0-1">
+                    <h1 id= "title" class="genre-title">Ciencia Ficción</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col s6 m4 l4 xl3">
-                  <div class="card">
+                  <div class="card new-carousel-content active" data-slide="0">
                     <div class="card-image">
                       <img src="../assets/images/movie-slide-1.jpg">
-                      <span class="card-title">Card Title</span>
                     </div>
                     <div class="card-content">
                         <table>
@@ -75,7 +74,7 @@
                                 </tr>
                                 <tr>
                                     <td>Año</td>
-                                    <td>20XX</td>
+                                    <td>20XX1</td>
                                 </tr>
                             </tbody>
                         </table>            
@@ -87,10 +86,9 @@
                   </div>
                 </div>
                 <div class="col s6 m4 l4 xl3">
-                    <div class="card">
+                    <div class="card new-carousel-content active" data-slide="1">
                       <div class="card-image">
                         <img src="../assets/images/movie-slide-1.jpg">
-                        <span class="card-title">Card Title</span>
                       </div>
                       <div class="card-content">
                           <table>
@@ -101,22 +99,21 @@
                                    </tr>
                                     <tr>
                                         <td>Año</td>
-                                        <td>20XX</td>
+                                        <td>20XX2</td>
                                     </tr>
                                 </tbody>
                            </table>
                       </div>
                       <div class="card-action center-align">
                         <!-- Modal Trigger -->
-                        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Ver más</a>
+                        <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Ver más</a>
                       </div>
                     </div>
                 </div>
                 <div class="col s6 m4 l4 xl3">
-                    <div class="card">
+                    <div class="card new-carousel-content" data-slide="2">
                       <div class="card-image">
                         <img src="../assets/images/movie-slide-1.jpg" class="" id="">
-                        <span class="card-title">Card Title</span>
                       </div>
                       <div class="card-content">
                           <table>
@@ -127,76 +124,268 @@
                                   </tr>
                                   <tr>
                                       <td>Año</td>
-                                    <td>20XX</td>
+                                    <td>20XX3</td>
                                   </tr>
                               </tbody>
                           </table>
                       </div>
                       <div class="card-action center-align">
                         <!-- Modal Trigger -->
-                        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Ver más</a>
+                        <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Ver más</a>
                       </div>
                     </div>
                 </div>
                 <div class="col s6 m4 l4 xl3">
-                    <div class="card">
+                    <div class="card new-carousel-content" data-slide="3">
                       <div class="card-image">
                         <img src="../assets/images/movie-slide-1.jpg">
-                        <span class="card-title">Card Title</span>
                       </div>
                       <div class="card-content">
                             <table>
-                                    <tbody>
-                                        <tr>
-                                            <td>Nombre</td>
-                                            <td>Grown Up</td>
-                                         </tr>
-                                          <tr>
-                                              <td>Año</td>
-                                              <td>20XX</td>
-                                          </tr>
-                                      </tbody>
-                                 </table>
+                                <tbody>
+                                    <tr>
+                                        <td>Nombre</td>
+                                        <td>Grown Up</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Año</td>
+                                        <td>20XX4</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                       </div>
                       <div class="card-action center-align">
                         <!-- Modal Trigger -->
-                        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Ver más</a>
+                        <a class="waves-effect waves-light btn modal-trigger" href="#modal4">Ver más</a>
                       </div>
                     </div>
                 </div>
-                <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">chevron_right</i></a>
-            </div>
-            <!-- Modal -->
-            <div id="modal1" class="modal">
-                    <div class="modal-content">
-                      <div class="image-div"><a class="btn-floating btn-large waves-effect waves-light blue right pulse pulsing-button"><i class="material-icons">play_arrow</i></a></div>
-                      <div id="rateYo"></div>
-                      <table class="bordered">
-                            <tbody>
-                              <tr>
-                                <td>Nombre</td>
-                                <td>X</td>
-                              </tr>
-                              <tr>
-                                <td>Año</td>
-                                <td>2017</td>
-                              </tr>
-                              <tr>
-                                <td>Sinopsis</td>
-                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis commodi ea similique earum deleniti magni possimus alias rerum velit atque. Nesciunt, quod minima ratione aperiam vero quasi neque voluptate cumque!</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                    </div>
-                    <div class="modal-footer">
-                      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">CLOSE</a>
-                    </div>
+                <a class="btn-floating btn-large waves-effect waves-light red arrow-right-button"><i class="material-icons">chevron_right</i></a>
             </div>
         </div>
     </section>
+    <!-- Modal -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="image-div"><a class="btn-floating btn-large waves-effect waves-light blue right pulse pulsing-button"><i class="material-icons">play_arrow</i></a></div>
+            <table class="bordered">
+                <tbody>
+                    <tr>
+                        <td>Nombre</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>Año</td>
+                        <td>2017</td>
+                    </tr>
+                    <tr>
+                        <td>Calificación</td>
+                        <td>
+                            <div>
+                                <table class="striped">
+                                    <tr>
+                                        <td>Historia</td>
+                                        <td>
+                                            <div id="rateYo-0-1"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Actuación</td>
+                                        <td><div id="rateYo-0-2"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Música</td>
+                                        <td><div id="rateYo-0-3"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Efectos Visuales</td>
+                                        <td><div id="rateYo-0-4"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Final</td>
+                                        <td><div id="rateYo-0-5"></div></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sinopsis</td>
+                        <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis commodi ea similique earum deleniti magni possimus alias rerum velit atque. Nesciunt, quod minima ratione aperiam vero quasi neque voluptate cumque!</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">CLOSE</a>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <div class="image-div"><a class="btn-floating btn-large waves-effect waves-light blue right pulse pulsing-button"><i class="material-icons">play_arrow</i></a></div>
+            <table class="bordered">
+                <tbody>
+                    <tr>
+                        <td>Nombre</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>Año</td>
+                        <td>2017</td>
+                    </tr>
+                    <tr>
+                        <td>Calificación</td>
+                        <td>
+                            <div>
+                                <table class="striped">
+                                    <tr>
+                                        <td>Historia</td>
+                                        <td><div id="rateYo-1-1"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Actuación</td>
+                                        <td><div id="rateYo-1-2"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Música</td>
+                                        <td><div id="rateYo-1-3"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Efectos Visuales</td>
+                                        <td><div id="rateYo-1-4"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Final</td>
+                                        <td><div id="rateYo-1-5"></div></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sinopsis</td>
+                        <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis commodi ea similique earum deleniti magni possimus alias rerum velit atque. Nesciunt, quod minima ratione aperiam vero quasi neque voluptate cumque!</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">CLOSE</a>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <div class="image-div"><a class="btn-floating btn-large waves-effect waves-light blue right pulse pulsing-button"><i class="material-icons">play_arrow</i></a></div>
+            <table class="bordered">
+                <tbody>
+                    <tr>
+                        <td>Nombre</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>Año</td>
+                        <td>2017</td>
+                    </tr>
+                    <tr>
+                        <td>Calificación</td>
+                        <td>
+                            <div>
+                                <table class="striped">
+                                    <tr>
+                                        <td>Historia</td>
+                                        <td><div id="rateYo-2-1"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Actuación</td>
+                                        <td><div id="rateYo-2-2"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Música</td>
+                                        <td><div id="rateYo-2-3"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Efectos Visuales</td>
+                                        <td><div id="rateYo-2-4"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Final</td>
+                                        <td><div id="rateYo-2-5"></div></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sinopsis</td>
+                        <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis commodi ea similique earum deleniti magni possimus alias rerum velit atque. Nesciunt, quod minima ratione aperiam vero quasi neque voluptate cumque!</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">CLOSE</a>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <div class="image-div"><a class="btn-floating btn-large waves-effect waves-light blue right pulse pulsing-button"><i class="material-icons">play_arrow</i></a></div>
+            <table class="bordered">
+                <tbody>
+                    <tr>
+                        <td>Nombre</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>Año</td>
+                        <td>2017</td>
+                    </tr>
+                    <tr>
+                        <td>Calificación</td>
+                        <td>
+                            <div>
+                                <table class="striped">
+                                    <tr>
+                                        <td>Historia</td>
+                                        <td><div id="rateYo-3-1"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Actuación</td>
+                                        <td><div id="rateYo-3-2"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Música</td>
+                                        <td><div id="rateYo-3-3"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Efectos Visuales</td>
+                                        <td><div id="rateYo-3-4"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Final</td>
+                                        <td><div id="rateYo-3-5"></div></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sinopsis</td>
+                        <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis commodi ea similique earum deleniti magni possimus alias rerum velit atque. Nesciunt, quod minima ratione aperiam vero quasi neque voluptate cumque!</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">CLOSE</a>
+        </div>
+    </div>
     <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
     <script src="../vendors/materialize/js/materialize.min.js"></script>
     <script src="../js/principal.js"></script>
 </body>
 </html>
+
