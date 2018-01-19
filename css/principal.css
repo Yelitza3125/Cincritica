@@ -35,16 +35,22 @@
 
 .image-div {
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-color: #34c1bb;
     background-position: center;
     height: 20em;
     margin-bottom: 1.5em;
 }
 
-/* Botón del modal */
+/* Botones del modal */
 .pulsing-button {
     top: 250px;
     margin-right: 1.3em;
+}
+
+.close-button {
+    background-color: #34c1bb;
+    color: #11135e;
 }
 
 @media (min-width: 992px) {
