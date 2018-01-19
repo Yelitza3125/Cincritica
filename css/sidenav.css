@@ -1,0 +1,18 @@
+.background{
+  background-color: #34c1bb;
+}
+.logo_sidenav{
+  width: 70%;
+  height: auto;
+}
+.side-nav .user-vie, .side-nav .userView {
+    position: relative;
+    padding: 32px 32px 10px;
+    margin-bottom: 8px;
+}
+#nicknametext{
+  font-size: 1.3em;
+}
+.displayblock{
+  display: block;
+}

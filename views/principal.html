@@ -5,21 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
-    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href="../css/sidenav.css">
     <title>principal</title>
   </head>
   <body>
     <ul id="nav-mobile" class="side-nav fixed">
-      <h4 id="nicknametext" class="center-align"></h4>
-      <li><a href="#!">First Sidebar Link</a></li>
-      <li><a href="#!">Second Sidebar Link</a></li>
-    </ul>
+
+      <li><div class="user-view center-align">
+      <div class="background">
+      </div>
+      <a href="#!user"><img class="logo_sidenav" src="../assets/images/logotipo/logo-fondo-blanco.png"></a>
+      <a href="#modal2" id="min-photo-user" class="waves-effect waves-light modal-trigger displayblock" ><span class="white-text" id="nicknametext"></span></a>
+    </div></li>
+    <li><a href="#!">Nosotros</a></li>
+    <li><a href="#!">Contacto</a></li>
+    <li><a href="#!">Blog</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="#!">INTERESES</a></li>
+    <li><a href="#!">TOP10</a></li>
+    <li><a href="#!">NUEVOS</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect" href="#!">Cerrar sesión</a></li>
+  </ul>
     <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a>
+
+    <!--modal perfil estructura-->
+    <div id="modal2" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <h4>Tus datos: </h4>
+        <div class="user-data">
+              <div class="panel panel-default">
+                  <img id="my-photo" class="my-photo" src="">
+                  <a><span class="white-text email" id="nicknametext"></span></a>
+              </div>
+  						<div class="panel panel-default col  s4">
+                <div class="panel-heading">Name: </div>
+  								<div class="panel-body" id ="your-name">
+                    <h6 id="user-name">Brenda Mesias</h6>
+  								</div>
+  						</div>
+  						<div class="panel panel-default col s8">
+  								<div class="panel-heading">Email: </div>
+  								<h6 id="user-email">brendamesias@gmail.com</h6>
+  								</div>
+  						</div>
+  			</div>
+        <div class="modal-footer">
+          <a class=" btn modal-action modal-close waves-effect waves-green btn-flat" type="button">Close</a>
+        </div>
+      </div>
+    </div>
 
     <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
     <script src="../vendors/materialize/js/materialize.min.js"></script>
-    <script src="../js/slidenav.js">
-
-    </script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+    <script src="../js/slidenav.js"></script>
+    <script src="../js/home.js"></script>
   </body>
 </html>
