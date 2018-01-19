@@ -7,7 +7,6 @@ $(document).ready(function() {
     nickNameValid();
   });
 
-
   function nickNameValid() {
     if ($('#nicknameinput').val().length >= 4 && !($('#nicknameinput').val().match(/^\s+|\s+$/)) === true) {
       $('#next-view').prop('disabled', false);
@@ -48,7 +47,7 @@ $(document).ready(function() {
           $('#btn-modal').trigger('click');
           $('#your-name').text(user.displayName);
           $('#your-email').text(user.email);
-          $('#your-photo').append('<img style="width50%;" src="' + user.photoURL + '"/>');
+          $('#your-photo').append('<img style="width:50%; height:auto;" src="' + user.photoURL + '"/>');
         });
     });
 
@@ -69,16 +68,6 @@ $(document).ready(function() {
     console.log(user.displayName);
   });
 
-  /*
-  // Escribiendo en la base de datos directamente
-      $('#btn-modal').click(function(){
-          firebase.database().ref('trying')
-          .set({
-              nombre: 'Tefa',
-              edad: '21'
-          })
-      });
-  */
   // Guardar información de los usuarios en  la base de datos
   function saveDataUser(user) {
     var myUser = {
@@ -91,13 +80,4 @@ $(document).ready(function() {
     firebase.database().ref('myUsersData/' + user.uid)
       .set(myUser);
   };
-
-  // Leer Base de datos
-  /*
-        firebase.database().ref('myUsersData')
-        .on('child_added', function(e) {
-            var user = e.val();
-            $('#container-my-friends').append('<img class="img-responsive" src="'+ user.photo +'"/>');
-        });
-      */
 });
