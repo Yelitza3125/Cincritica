@@ -3,10 +3,9 @@ $(document).ready(function() {
   $('.modal').modal();
 
 
-  $('#nicknameinput').keyup(function(){
-   nickNameValid();
+  $('#nicknameinput').keyup(function() {
+    nickNameValid();
   });
-
 
 
   function nickNameValid() {
@@ -70,7 +69,6 @@ $(document).ready(function() {
             $('#user-email').text(user.email);
             console.log(user.displayName)
         });
-
         // Escribiendo en la base de datos directamente
             $('#btn-modal').click(function(){
                 firebase.database().ref('trying')
