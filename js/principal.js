@@ -181,14 +181,16 @@ $(document).ready(function() {
   var $randomNumber1 = Math.floor(Math.random() * $randomScifiMoviesArray.length - 1) + 1;
   var $randomMovie = $randomScifiMoviesArray[$randomNumber1];
   console.log($randomMovie);
-  var $movieInfo;
+  var $movieImage;
   function apiCall() {
     $.getJSON('http://www.omdbapi.com/?apikey=3a181f1c&t=' + encodeURI($randomMovie)).then(function(response) {
-      console.log(response);
-      $movieInfo = response;
+      $movieImage = response.Poster;
+      $('#movie-1').attr('src', $movieImage);
+      console.log($('#movie-1').attr('src'));
+      console.log(response.Poster);
     });
   }
   apiCall();
-  $moviePoster = $movieInfo['Poster'];
-  console.log($moviePoster);
+  /* $moviePoster = $movieInfo['Poster']; */
+  /* console.log($moviePoster); */
 });
