@@ -1,4 +1,17 @@
 /* Vista principal */
+/* Estilos de la Vista Principal */
+
+.row .slide-container {
+    padding: 0;
+}
+
+.slider .slides li .principal-slide-2 {
+    background-position: top;
+}
+
+.slider .slides li .principal-slide-1 {
+    background-position: bottom;
+}
 
 .genre-title {
     border-bottom: 3px solid black;

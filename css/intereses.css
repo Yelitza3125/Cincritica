@@ -81,12 +81,3 @@
     }
 }
 
-/* Estilos de la Vista Principal */
-
-.slider .slides li .principal-slide-2 {
-    background-position: top;
-}
-
-.slider .slides li .principal-slide-1 {
-    background-position: bottom;
-}
