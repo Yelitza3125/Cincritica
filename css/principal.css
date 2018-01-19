@@ -13,7 +13,7 @@
 }
 
 .genre-title {
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid #34c1bb;
     padding-bottom: 0.15em;
     font-size: 3.8rem;
 }
@@ -50,5 +50,3 @@
         margin: 0 10rem;
     }
 }
-
-

@@ -47,7 +47,7 @@ $(document).ready(function() {
           $('#btn-modal').trigger('click');
           $('#your-name').text(user.displayName);
           $('#your-email').text(user.email);
-          $('#your-photo').append('<img style="width:50%; height:auto;" src="' + user.photoURL + '"/>');
+          $('#your-photo').append('<img style="width:50% ; height:auto;" src="' + user.photoURL + '"/>');
         });
     });
 
