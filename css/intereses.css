@@ -12,31 +12,75 @@
     height: 100%;
 }
 
-/* Estilos a la seccion de los filtros */
+.img-logo {
+    margin-top: 2em;
+    width: 12%;
+    display: flex;
+    justify-content: center;
+}
 
-.interests-section {
-    margin: 5.2em 0;
+.img-logo img {
+    width: 30%;
 }
 
 .interests-header {
-    background-color: #11135e;
-    color: #ffda4d;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
+.section-title {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Estilo del header */
+.interests-header {
+    background-color: #11135e;
+    color: #fff;
+    height: 20vh;
+}
+
+/* Estilos a la seccion de los filtros */
+
+.section-options {
+    background-color: #11135e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background-image: url('../assets/images/vectores/cine.jpg');
+    background-position: center;
+    background-size: contain;
+}
+
+.space {
+    margin-bottom: 4em;
+}
+
+/*
 .interests-header h1 {
     margin: 0 0 1.68rem 0;
     padding: 0.5em;
     font-size: 3.8rem;
+} */
+
+.back-yellow {
+    background-color: #ffda4d;
+}
+
+.back-green {
+    background-color: #34c1bb;
 }
 
 .interests-div {
-    color: yellow;
     font-size: 1.8em;
-    height: 4em;
-    margin: 0 1em 2em;
-    background-color: #11135e;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
     word-break: break-word;
     justify-content: center;
+   
 }
 
 .interest-selected {
@@ -44,31 +88,70 @@
 }
 
 .button-container {
-    margin-top: 4.2em;
+    margin-top: 8em;
 }
 
 .button-container .btn {
     font-size: 1.3rem;
-    background-color: #34c1bb;
+    background-color: #11135e;
     height: 40px;
     line-height: 40px;
     padding: 0 2.2rem;
 }
 
-@media (min-width: 600px){
-    .interests-section {
-        margin: 7em 0;
+.icons {
+    width: 30%;
+}
+
+@media (max-width: 600px){
+
+    .interests-header {
+        height: 20vh;
+        color: #fff;
     }
 
-    .interests-div {
-        font-size: 1.9em;
-        height: 5em;
-        width: 90%;
+    .section-options {
+        height: 80vh;
+        background-image: url('../assets/images/vectores/cine.jpg');
+        background-position: center;
+        background-size: contain;
+    }
+
+    .space {
+        margin-top: 2em;
+        margin-bottom: 0;
+    }
+
+    .interests-div { 
+       font-size: 1.8em;
+       height: 150px;
+       width: 150px;
+       margin: 0 auto;
+       word-break: break-word;
+       justify-content: center; 
     }
 
     .button-container {
-        margin-top: 4.5em;
+        margin-top: 3em;   
     }
+
+    .section-title {
+        font-size: 2em;
+        text-align: left;
+    }
+
+    .img-logo {
+        margin-top: 2em;
+        width: 35%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .img-logo img {
+        width: 30%;
+    }
+
+   
 }
 
 @media (min-width: 992px) {
@@ -81,12 +164,3 @@
     }
 }
 
-/* Estilos de la Vista Principal */
-
-.slider .slides li .principal-slide-2 {
-    background-position: top;
-}
-
-.slider .slides li .principal-slide-1 {
-    background-position: bottom;
-}

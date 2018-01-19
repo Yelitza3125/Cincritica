@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cincritica Filters</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/icons/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+  <!-- Iconos de Materialize -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Framework Materialize CSS -->
+  <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="../css/filters.css">
+  <link rel="stylesheet" href="../css/sidenav.css">
+  <link rel="stylesheet" href="../css/principal.css">
+</head>
+<body class="bg-cc vh100">
+
+  <!-- Encabezado -->
+  <header class="">
+          <ul id="nav-mobile" class="side-nav fixed">
+
+                        <li><div class="user-view center-align">
+                        <div class="background">
+                        </div>
+                        <a href="principal.html"><img class="logo_sidenav" src="../assets/images/logotipo/logo-fondo-blanco.png"></a>
+                        <a href="#modalperfil" id="min-photo-user" class="waves-effect waves-light modal-trigger displayblock" ><span class="white-text" id="nicknametext"></span></a>
+                      </div></li>
+                      <li><a href="#!">Nosotros</a></li>
+                      <li><a href="#!">Contacto</a></li>
+                      <li><a href="#!">Blog</a></li>
+                      <li><div class="divider"></div></li>
+                      <li><a href="#!">INTERESES</a></li>
+                      <li><a href="#!">TOP10</a></li>
+                      <li><a href="#!">NUEVOS</a></li>
+                      <li><div class="divider"></div></li>
+
+                      <li><a href="../views/home.html" class="waves-effect" >Cerrar sesión</a></li>
+
+                    </ul>
+                      <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a>
+  </header>
+
+  <!--SECCTION SLIDER principal genero de la pelicula seleccionada-->
+  <!-- <section class="genero">
+    <div class="row">
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="../assets/images/filters/feed/cin.jpg">
+            <div class="caption center-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="../assets/images/filters/ciencia1.jpg">
+            <div class="caption left-align">
+              <h3>Left Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="../assets/images/filters/ciencia2.jpg">
+            <div class="caption right-align">
+              <h3>Right Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section> -->
+
+  <!--SECTION TABS (TOP/ OTROS/ RECOMENDAR)-->
+  <section class="publications">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 col m10 offset-m2">
+          <ul id="tabs-swipe-demo" class="tabs">
+            <li class="tab col s6"><a class="active" href="#test-swipe-1">TOP 10</a></li>
+            <li class="tab col s6"><a href="#test-swipe-2">DESCUBRE</a></li>
+          </ul>
+          <div id="test-swipe-1" class="col s12 white">
+            <div class="row">
+              <div class="col s12 offset-m3 m6">
+                <div class="card">
+                  <div class="header">
+                    <div class="col s3 center-align">
+                      <img src="../assets/images/filters/top/t1.jpg" alt="" class="responsive-img">
+                    </div>
+                    <div class="col s6">
+                      <h5><strong>BLADE RUNNER</strong></h5>
+                      <ul>
+                        <li><b>Estreno:</b> 2017 - 2hr</li>
+                        <li><b>Top:</b><img class="top" src="../assets/images/filters/feed/1.png"></li>
+                      </ul>
+                    </div>
+                    <div class="col s3">
+                      <img src="../assets/images/filters/feed/top.png" alt="" class="responsive-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="test-swipe-2" class="col s12 white">
+            <div class="row">
+              <div class="col s12 m6">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaDZoaTPmRm4pijO3IVIvG5YnqpjQ0eKCWubTtyoMoMeDVdHiR">
+                    <span class="card-title"><strong>Titulo pelicula</strong></span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">play_arrow</i></a>
+                  </div>
+                  <div class="card-content">
+                    <p><b>Año:</b> 2017</p>
+                    <p><b>Duración:</b> 2h 20min</p>
+                    <P><b>Calificación:</b> estrellitas</P>
+                    <br>
+                    <p>SINOPSIS: I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+  </section>
+
+  <!--modal perfil estructura-->
+  <div id="modalperfil" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Tus datos: </h4>
+      <div class="user-data">
+            <div class="panel panel-default">
+                <img id="my-photo" class="my-photo photoUser" src="">
+                <a><span class="white-text email" id="nicknametext"></span></a>
+            </div>
+                        <div class="panel panel-default col  s4">
+              <div class="panel-heading">Name: </div>
+                                <div class="panel-body" id ="your-name">
+                  <h6 id="user-name">Brenda Mesias</h6>
+                                </div>
+                        </div>
+                        <div class="panel panel-default col s8">
+                                <div class="panel-heading">Email: </div>
+                                <h6 id="user-email">brendamesias@gmail.com</h6>
+                                </div>
+      </div>
+      <div class="modal-footer">
+        <a class=" btn modal-action modal-close waves-effect waves-green btn-flat" type="button">Close</a>
+      </div>
+    </div>
+  </div>
+  <!-- Libreria JQuery -->
+  <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+  <!-- JS Materialize -->
+  <script src="../vendors/materialize/js/materialize.min.js"></script>
+  <!-- Libreria de Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+  <!-- link de firebase de brenda-->
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+  <script src="../js/slidenav.js"></script>
+  <script src="../js/home.js"></script>
+  <script src="../js/filters.js"></script>
+</body>
+</html>

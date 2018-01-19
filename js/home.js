@@ -17,12 +17,12 @@ $(document).ready(function() {
 
   // Inicializando Firebase
   var config = {
-    apiKey: "AIzaSyAk-IzoOuu3mhEJTU8vR6fFITla-MBzA1k",
-    authDomain: "cincritica.firebaseapp.com",
-    databaseURL: "https://cincritica.firebaseio.com",
-    projectId: "cincritica",
-    storageBucket: "cincritica.appspot.com",
-    messagingSenderId: "510323267571"
+    apiKey: 'AIzaSyAk-IzoOuu3mhEJTU8vR6fFITla-MBzA1k',
+    authDomain: 'cincritica.firebaseapp.com',
+    databaseURL: 'https://cincritica.firebaseio.com',
+    projectId: 'cincritica',
+    storageBucket: 'cincritica.appspot.com',
+    messagingSenderId: '510323267571'
   };
   firebase.initializeApp(config);
 

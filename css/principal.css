@@ -1,0 +1,54 @@
+/* Estilos de la Vista Principal */
+
+.row .slide-container {
+    padding: 0;
+}
+
+.slider .slides li .principal-slide-2 {
+    background-position: top;
+}
+
+.slider .slides li .principal-slide-1 {
+    background-position: bottom;
+}
+
+.genre-title {
+    border-bottom: 3px solid black;
+    padding-bottom: 0.15em;
+    font-size: 3.8rem;
+}
+
+.card .card-content {
+    padding: 10px;
+    word-break: break-word;
+}
+
+.arrow-right-button {
+    top: 160px;
+}
+
+/* Contenedor de la imagen */
+
+.image-div {
+    background-image: url('../assets/images/comedia.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20em;
+    margin-bottom: 1.5em;
+}
+
+/* Botón del modal */
+.pulsing-button {
+    top: 250px;
+    margin-right: 1.3em;
+}
+
+@media (min-width: 992px) {
+    .container .row-container-cards {
+        width: 100%;
+        margin: 0 10rem;
+    }
+}
+
+

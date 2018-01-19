@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $('.logo').addClass('animated slideInDown');
   console.log(JSON.parse(localStorage.getItem('email_new_user'))); // array
   console.log(JSON.parse(localStorage.getItem('password_new_user'))); // array
   
