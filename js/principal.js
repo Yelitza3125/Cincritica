@@ -190,7 +190,7 @@ $(document).ready(function() {
   console.log($randomMovie);
   // Accediendo al Open Movie DataBase
   function apiCall() {
-    $.getJSON('http://www.omdbapi.com/?apikey=3a181f1c&t=' + encodeURI($randomMovie)).then(function(response) {
+    $.getJSON('https://www.omdbapi.com/?apikey=3a181f1c&t=' + encodeURI($randomMovie)).then(function(response) {
       $movieImage = response.Poster;
       $movieName = response.Title;
       $movieYear = response.Year;
@@ -221,7 +221,7 @@ $(document).ready(function() {
 
   // Accediendo al Open Movie DataBase
   function apiCall2() {
-    $.getJSON('http://www.omdbapi.com/?apikey=3a181f1c&t=' + encodeURI($randomMovie2)).then(function(response) {
+    $.getJSON('https://www.omdbapi.com/?apikey=3a181f1c&t=' + encodeURI($randomMovie2)).then(function(response) {
       $movieImage = response.Poster;
       $movieName = response.Title;
       $movieYear = response.Year;
@@ -252,7 +252,7 @@ $(document).ready(function() {
 
   // Accediendo al Open Movie DataBase
   function apiCall3() {
-    $.getJSON('http://www.omdbapi.com/?apikey=3a181f1c&t=' + encodeURI($randomMovie3)).then(function(response) {
+    $.getJSON('https://www.omdbapi.com/?apikey=3a181f1c&t=' + encodeURI($randomMovie3)).then(function(response) {
       $movieImage = response.Poster;
       $movieName = response.Title;
       $movieYear = response.Year;
@@ -283,7 +283,7 @@ $(document).ready(function() {
 
   // Accediendo al Open Movie DataBase
   function apiCall4() {
-    $.getJSON('http://www.omdbapi.com/?apikey=3a181f1c&t=' + encodeURI($randomMovie4)).then(function(response) {
+    $.getJSON('https://www.omdbapi.com/?apikey=3a181f1c&t=' + encodeURI($randomMovie4)).then(function(response) {
       $movieImage = response.Poster;
       $movieName = response.Title;
       $movieYear = response.Year;
