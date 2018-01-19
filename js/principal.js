@@ -1,4 +1,11 @@
 $(document).ready(function() {
+  // Menú Hamburguesa
+  $('.button-collapse').sideNav();    
+  // Slider
+  $('.slider').slider({interval: 4500});
+  // Carousel-Slider
+  $('.modal').modal();
+  // Obteniendo el género(s) escogido por el usuario
   var $genreMovieTitle = $('#title');
   var $genreObjectKey = JSON.parse(localStorage.getItem('genre')); 
   // var $dataBase = $.getJSON('http://www.omdbapi.com/?apikey=3a181f1c&i=tt0083866');
@@ -17,12 +24,6 @@ $(document).ready(function() {
       $genreMovieTitle.text('Ciencia Ficción');
     }
   }
-  // Menú Hamburguesa
-  $('.button-collapse').sideNav();    
-  // Slider
-  $('.slider').slider({interval: 4500});
-  // Carousel-Slider
-  $('.modal').modal();
   // Calificación de Estrellas del Primer Modal
   $(function() {
     $('#rateYo-0-1').rateYo({

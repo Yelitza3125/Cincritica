@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cincritica Filters</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/icons/logo.png">
+  <!-- Framework Materialize CSS -->
+  <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+  <!-- Iconos de Materialize -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="../css/filters.css">
+</head>
+<body class="bg-cc">
+  <!-- Cabecera, menú hamburguesa -->
+  <nav class="navCollapsible">
+    <div class="nav-wrapper bg-bd">
+      <a href="#!" class="brand-logo">Inicio</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Nombre y Apellido</a></li>
+        <li><a href="#">Configuración</a></li>
+        <li><a href="#">Cerrar Sesión</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+          <li><div class="user-view">
+              <div class="background">
+                <img src="../assets/images/flat.jpg">
+              </div>
+              <a href="#!user"><img class="circle" src="../assets/images/flat.jpg"></a>
+              <a href="#!name"><span class="name t-g">Carlos Cueva</span></a>
+              <a href="#!email"><span class="email t-g">carlos@gmail.com</span></a>
+            </div></li>
+        <li><a href="#">Configuración</a></li>
+        <li><a href="#">Cerrar Sesión</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--SECCTION SLIDER principal genero de la pelicula seleccionada-->
+  <!-- <section class="genero">
+    <div class="row">
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="../assets/images/filters/feed/cin.jpg">
+            <div class="caption center-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="../assets/images/filters/ciencia1.jpg">
+            <div class="caption left-align">
+              <h3>Left Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="../assets/images/filters/ciencia2.jpg">
+            <div class="caption right-align">
+              <h3>Right Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section> -->
+
+  <!--SECTION TABS (TOP/ OTROS/ RECOMENDAR)-->
+  <section class="publications">
+    <div class="row">
+      <ul id="tabs-swipe-demo" class="tabs">
+        <li class="tab col s6"><a class="active" href="#test-swipe-1">TOP 10</a></li>
+        <li class="tab col s6"><a href="#test-swipe-2">DESCUBRE</a></li>
+      </ul>
+      <div id="test-swipe-1" class="col s12 white">
+        <div class="row">
+          <div class="col s12 offset-m3 m6">
+            <div class="card">
+              <div class="header">
+                <div class="col s3 center-align">
+                  <img src="../assets/images/filters/top/t1.jpg" alt="" class="responsive-img">
+                </div>
+                <div class="col s6">
+                  <h5><strong>BLADE RUNNER</strong></h5>
+                  <ul>
+                    <li><b>Estreno:</b> 2017 - 2hr</li>
+                    <li><b>Top:</b><img class="top" src="../assets/images/filters/feed/1.png"></li>
+                  </ul>
+                </div>
+                <div class="col s3">
+                  <img src="../assets/images/filters/feed/top.png" alt="" class="responsive-img">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="test-swipe-2" class="col s12 white">
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaDZoaTPmRm4pijO3IVIvG5YnqpjQ0eKCWubTtyoMoMeDVdHiR">
+                <span class="card-title"><strong>Titulo pelicula</strong></span>
+                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">play_arrow</i></a>
+              </div>
+              <div class="card-content">
+                <p><b>Año:</b> 2017</p>
+                <p><b>Duración:</b> 2h 20min</p>
+                <P><b>Calificación:</b> estrellitas</P>
+                <br>
+                <p>SINOPSIS: I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Libreria JQuery -->
+  <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+  <!-- JS Materialize -->
+  <script src="../vendors/materialize/js/materialize.min.js"></script>
+  <!-- Libreria de Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <!-- link de firebase de brenda-->
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+  <script src="../js/slidenav.js"></script>
+  <script src="../js/home.js"></script>
+  <script src="../js/filters.js"></script>
+</body>
+</html>
