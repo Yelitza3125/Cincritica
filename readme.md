@@ -25,7 +25,7 @@ Antes de seguir con la documentación, es importante conocer la siguiente defini
 - Prototipado
 - Elección del nombre del producto.
 
-#####Lista de tareas: 
+#####Lista de tareas:
 
 - Aracely Gutarra: Investigación de la API Open Movie Database
 - Pamela Rojas: Investigación de la API Open Movie Database
@@ -34,18 +34,18 @@ Antes de seguir con la documentación, es importante conocer la siguiente defini
 
 **Miércoles 17 de Enero**
 
-Yelitza Cisneros: 
-- Maquetación y estilos de la vista "Sign up", "Home" y "Splash" (slider). 
+Yelitza Cisneros:
+- Maquetación y estilos de la vista "Sign up", "Home" y "Splash" (slider).
 - Validación del formulario de registro sin  Google
 
 
-Aracely Gutarra: 
+Aracely Gutarra:
 - Extracción de la data de API Open Movie Database
 - Primera maquetación de la vista "Intereses".
 - Funcionalidad de la vista "intereses".
 - Maquetación inicial de la vista "principal"
 
-Brenda Mesías: 
+Brenda Mesías:
 - Vinculación para el registro de Google mediante Firebase.
 
 Pamela de la Cruz:
@@ -72,12 +72,29 @@ Pamela de la Cruz:
 - Funcionalidad de la vista "filters", a través del filtrado del API Open Movie Database.
 - Utilización de jQuery Raty | A Star Rating Plugin, para la calificación mediante estrellas del usuario.
 
+**Jueves 18 de Enero**
+
+Yelitza Cisneros:
+- Corrección de estilos y actualización del archivo readme.
+
+-Brenda Mesías:
+- Estilo de los modales.
+
+Aracely Gutarra:
+- Funcionalidad de la vista "intereses" (filtrado de selección).
+- Funcionalidad de la vista "principal".
+- Utilización de jQuery Raty | A Star Rating Plugin, para la calificación mediante estrellas del usuario.
+
+Pamela de la Cruz:
+- Funcionalidad de la vista "filters", a través del filtrado del API Open Movie Database.
+- Utilización de jQuery Raty | A Star Rating Plugin, para la calificación mediante estrellas del usuario.
+
 ## User Research
 
 Realizamos dos encuestas virtuales. La primera para conocer las motivaciones, gustos y modos de actuar de los posibles usuarios al momento de ver películas.
 
 ### Primera encuesta
-Link de la encuesta: 
+Link de la encuesta:
 https://docs.google.com/spreadsheets/d/1GSYrLo6JlDa2eOdUQybpmWgU2rz3L4uCAgXFHdF9cK8/edit?usp=forms_web_b#gid=2038668038
 
 
@@ -98,7 +115,7 @@ Se realizó a 34 personas y obtuvimos los siguientes resultados:
 
 ### Segunda encuesta
 
-Link de la encuesta: 
+Link de la encuesta:
 https://docs.google.com/spreadsheets/d/1DlYl4HspP5_HCBH-cPMMcVhUPCSKpHTepqwsviYJgIQ/edit?usp=forms_web_b#gid=12016895
 
 Se realizó a 18 personas, y se centró en sus gustos sobre las críticas de cine. Las respuestas fueron las siguientes.
@@ -130,7 +147,7 @@ Se realizó a 18 personas, y se centró en sus gustos sobre las críticas de cin
 
 ### Perfil:
 Carlos es un joven de 25 años, estudiante universitario. Los fines de semana sale con sus amigos al cine o realizan reunines en su casa para ver películas en alguna página web.
-Para decidir que películas, se guía de recomendaciones de amigos, familiares o de páginas web. Sin embargo, muchas veces ha sufrido de spoilers que le quitaron las ganas de ver la película. En otras ocasiones luego de ver una película ha encontrado opiniones contradictorias a las suyas, que acabaron en una pelea. 
+Para decidir que películas, se guía de recomendaciones de amigos, familiares o de páginas web. Sin embargo, muchas veces ha sufrido de spoilers que le quitaron las ganas de ver la película. En otras ocasiones luego de ver una película ha encontrado opiniones contradictorias a las suyas, que acabaron en una pelea.
 
 
 ### Motivaciones:
@@ -157,11 +174,11 @@ Para decidir que películas, se guía de recomendaciones de amigos, familiares o
 
 ### Identificando la Problemática:
 
-Al público no le agrada escribir su opiniones en redes sociales y en la mayoría de las ocasiones tampoco les agrada leerlos. Sin embargo, son de importancia para ellos al momento de elegir una película. 
+Al público no le agrada escribir su opiniones en redes sociales y en la mayoría de las ocasiones tampoco les agrada leerlos. Sin embargo, son de importancia para ellos al momento de elegir una película.
 
 "Recomendación sin opinión ni spoilers"
 
-## Benchmark : 
+## Benchmark :
 
 ### Análisis de la Competencia
 
@@ -170,11 +187,11 @@ Aplicación que recomienda películas que se parecen a otra, filtradas a partir 
 Tiene la desventaja de que la calificación del público está en base al género y no a la película. Tampoco ofrece un listado de películas para escoger.
 ![Tasted](assets/images/competencia/tasted.jpg)
 
-- A Good Movie to Watch: 
- Se enfoca en recomendar películas que no son necesariamente conocidas, pero que cuentan con respaldo de crítica y público. 
+- A Good Movie to Watch:
+ Se enfoca en recomendar películas que no son necesariamente conocidas, pero que cuentan con respaldo de crítica y público.
  ![A good movie to watch](assets/images/competencia/goodMovieToWatch.jpg)
 
-- Good Movies List: 
+- Good Movies List:
  Ofrece una lista de las mejores películas de cada año, de acuerdo a si han ganado premios.
 
  ![Good Movie](assets/images/competencia/wich-movie.jpg)
@@ -189,17 +206,17 @@ Tiene la desventaja de que la calificación del público está en base al géner
 
 
 ## Propuesta de producto:
-Cincrítica es una plataforma virtual donde nuestros usuarios podrán opinar sobre películas en un ambiente libre de conflictos y spoilers, a través de un sistema de calificación y valoración de estrellas. 
+Cincrítica es una plataforma virtual donde nuestros usuarios podrán opinar sobre películas en un ambiente libre de conflictos y spoilers, a través de un sistema de calificación y valoración de estrellas.
 Además mostraremos la información necesaria sobre las películas, filtradas de acuerdo a los intereses de cada usuario.
 
 ### Flujo de aplicación:
 
-#### 1. Vista Splash: 
+#### 1. Vista Splash:
 
 Slider de imágenes y textos, que dan una breve explicación al usuario sobre la aplicación.
 
 
-#### 2. Vista Home: 
+#### 2. Vista Home:
 
 Información sobre la aplicación y a través de botones, redirecciona al usuario a registrarse por primera vez o ingresar si ya tiene una cuenta.
 
@@ -251,6 +268,6 @@ Se accederá a otra vista donde se muestra el top 10 de las películas de aquel 
 
 
 >##### Yelitza Cisneros
->##### Brenda Mesías 
+>##### Brenda Mesías
 >##### Araceli Gutarra
 >##### Pamela de la Cruz
