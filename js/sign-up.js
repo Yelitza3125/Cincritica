@@ -1,6 +1,4 @@
 $(document).ready(function() {
-
- 
   $('.logo').addClass('animated slideInDown');
 
   

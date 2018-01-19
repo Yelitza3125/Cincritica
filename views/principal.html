@@ -13,7 +13,7 @@
 </head>
 <body class="vh100">
     <!-- Encabezado -->
-    <header class="">
+    <header class="valign-wrapper">
             <ul id="nav-mobile" class="side-nav fixed">
               <li><div class="user-view center-align">
                   <div class="background"></div>
@@ -31,8 +31,14 @@
               <li><div class="divider"></div></li>
               <li><a href="../views/home.html" class="waves-effect" >Cerrar sesión</a></li>
             </ul>
-              <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a>
+              <div class="valign-wrapper center-align elements_header">
+                <div class="left-align">
+                  <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only "><i class="material-icons white-text btn_hambuguer">menu</i></a>
+                </div>
+                <img src="../assets/images/logotipo/logo-fondo-blanco.png"  class="logo_header "alt="">
+              </div>
     </header>
+
 
     <!--slide de la vista principal-->
 
@@ -74,7 +80,7 @@
                 <div class="col s6 m4 l4 xl3">
                   <div class="card new-carousel-content active" data-slide="0">
                     <div class="card-image">
-                      <img src="../assets/images/movie-slide-1.jpg">
+                      <img src="../assets/images/movie-slide-1.jpg" id="movie-1">
                     </div>
                     <div class="card-content">
                         <table>
@@ -99,7 +105,7 @@
                 <div class="col s6 m4 l4 xl3">
                     <div class="card new-carousel-content active" data-slide="1">
                       <div class="card-image">
-                        <img src="../assets/images/movie-slide-1.jpg">
+                        <img src="../assets/images/movie-slide-1.jpg" id="movie-2">
                       </div>
                       <div class="card-content">
                           <table>
@@ -124,7 +130,7 @@
                 <div class="col s6 m4 l4 xl3">
                     <div class="card new-carousel-content" data-slide="2">
                       <div class="card-image">
-                        <img src="../assets/images/movie-slide-1.jpg" class="" id="">
+                        <img src="../assets/images/movie-slide-1.jpg" class="" id="movie-3">
                       </div>
                       <div class="card-content">
                           <table>
@@ -149,7 +155,7 @@
                 <div class="col s6 m4 l4 xl3">
                     <div class="card new-carousel-content" data-slide="3">
                       <div class="card-image">
-                        <img src="../assets/images/movie-slide-1.jpg">
+                        <img src="../assets/images/movie-slide-1.jpg" id="movie-4">
                       </div>
                       <div class="card-content">
                             <table>
@@ -175,7 +181,6 @@
             </div>
         </div>
     </section>
->>>>>>> 43634781600380bd0741833b8470a7601670c6ff
 
     <!--modal perfil estructura-->
     <div id="modalperfil" class="modal modal-fixed-footer">
