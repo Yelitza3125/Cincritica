@@ -15,12 +15,12 @@
     <!-- Encabezado -->
     <header class="">
             <ul id="nav-mobile" class="side-nav fixed">
-                    
+
                           <li><div class="user-view center-align">
                           <div class="background">
                           </div>
                           <a href="principal.html"><img class="logo_sidenav" src="../assets/images/logotipo/logo-fondo-blanco.png"></a>
-                          <a href="#modal2" id="min-photo-user" class="waves-effect waves-light modal-trigger displayblock" ><span class="white-text" id="nicknametext"></span></a>
+                          <a href="#modalperfil" id="min-photo-user" class="waves-effect waves-light modal-trigger displayblock" ><span class="white-text" id="nicknametext"></span></a>
                         </div></li>
                         <li><a href="#!">Nosotros</a></li>
                         <li><a href="#!">Contacto</a></li>
@@ -30,39 +30,15 @@
                         <li><a href="#!">TOP10</a></li>
                         <li><a href="#!">NUEVOS</a></li>
                         <li><div class="divider"></div></li>
-                    
+
                         <li><a href="../views/home.html" class="waves-effect" >Cerrar sesión</a></li>
-                    
+
                       </ul>
                         <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a>
-                    
-                        <!--modal perfil estructura-->
-                        <div id="modal2" class="modal modal-fixed-footer">
-                          <div class="modal-content">
-                            <h4>Tus datos: </h4>
-                            <div class="user-data">
-                                  <div class="panel panel-default">
-                                      <img id="my-photo" class="my-photo photoUser" src="">
-                                      <a><span class="white-text email" id="nicknametext"></span></a>
-                                  </div>
-                                              <div class="panel panel-default col  s4">
-                                    <div class="panel-heading">Name: </div>
-                                                      <div class="panel-body" id ="your-name">
-                                        <h6 id="user-name">Brenda Mesias</h6>
-                                                      </div>
-                                              </div>
-                                              <div class="panel panel-default col s8">
-                                                      <div class="panel-heading">Email: </div>
-                                                      <h6 id="user-email">brendamesias@gmail.com</h6>
-                                                      </div>
-                                              </div>
-                                  </div>
-                            <div class="modal-footer">
-                              <a class=" btn modal-action modal-close waves-effect waves-green btn-flat" type="button">Close</a>
-                            </div>
-                          </div>
-                        </div>
     </header>
+
+    <!--slide de la vista principal-->
+
     <div class="row">
         <div class="col s12 m12 l10 xl11 right slide-container">
             <div class="slider">
@@ -88,6 +64,8 @@
             </div>
         </div>
     </div>
+
+    <!--section-->
     <section>
         <div class="container">
             <div class="row" id="row-0-1">
@@ -113,7 +91,7 @@
                                     <td>20XX1</td>
                                 </tr>
                             </tbody>
-                        </table>            
+                        </table>
                     </div>
                     <div class="card-action center-align">
                         <!-- Modal Trigger -->
@@ -200,7 +178,34 @@
             </div>
         </div>
     </section>
-    <!-- Modal -->
+
+    <!--modal perfil estructura-->
+    <div id="modalperfil" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <h4>Tus datos: </h4>
+        <div class="user-data">
+              <div class="panel panel-default">
+                  <img id="my-photo" class="my-photo photoUser" src="">
+                  <a><span class="white-text email" id="nicknametext"></span></a>
+              </div>
+                          <div class="panel panel-default col  s4">
+                <div class="panel-heading">Name: </div>
+                                  <div class="panel-body" id ="your-name">
+                    <h6 id="user-name">Brenda Mesias</h6>
+                                  </div>
+                          </div>
+                          <div class="panel panel-default col s8">
+                                  <div class="panel-heading">Email: </div>
+                                  <h6 id="user-email">brendamesias@gmail.com</h6>
+                                  </div>
+        </div>
+        <div class="modal-footer">
+          <a class=" btn modal-action modal-close waves-effect waves-green btn-flat" type="button">Close</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal araceli-->
     <div id="modal1" class="modal">
         <div class="modal-content">
             <div class="image-div"><a class="btn-floating btn-large waves-effect waves-light blue right pulse pulsing-button"><i class="material-icons">play_arrow</i></a></div>
@@ -256,7 +261,12 @@
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">CLOSE</a>
         </div>
     </div>
-    <!-- Modal -->
+
+
+
+
+
+    <!-- Modal araceli-->
     <div id="modal2" class="modal">
         <div class="modal-content">
             <div class="image-div"><a class="btn-floating btn-large waves-effect waves-light blue right pulse pulsing-button"><i class="material-icons">play_arrow</i></a></div>
@@ -422,9 +432,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
     <script src="../vendors/materialize/js/materialize.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+  	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+  	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+  	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
     <script src="../js/slidenav.js"></script>
     <script src="../js/home.js"></script>
     <script src="../js/principal.js"></script>
