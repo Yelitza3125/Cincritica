@@ -1,13 +1,13 @@
 $(document).ready(function() {
   // Menú Hamburguesa
-  $('.button-collapse').sideNav();    
+  $('.button-collapse').sideNav();
   // Slider
   $('.slider').slider({interval: 4500});
   // Carousel-Slider
   $('.modal').modal();
   // Obteniendo el género(s) escogido por el usuario
   var $genreMovieTitle = $('#title');
-  var $genreObjectKey = JSON.parse(localStorage.getItem('genre')); 
+  var $genreObjectKey = JSON.parse(localStorage.getItem('genre'));
   // var $dataBase = $.getJSON('http://www.omdbapi.com/?apikey=3a181f1c&i=tt0083866');
   // console.log($database);
   for (var $i = 0; $i < $genreObjectKey['genre'].length; $i++) {
@@ -213,7 +213,7 @@ $(document).ready(function() {
     });
   }
   apiCall();
-  
+
   // Para el segundo card/tarjeta
   var $randomNumber2 = Math.floor(Math.random() * $randomScifiMoviesArray.length - 1) + 1;
   var $randomMovie2 = $randomScifiMoviesArray[$randomNumber2];
@@ -274,7 +274,7 @@ $(document).ready(function() {
       console.log(response.Poster);
     });
   }
-  apiCall3();  
+  apiCall3();
 
   // Para el cuarto card/tarjeta
   var $randomNumber4 = Math.floor(Math.random() * $randomScifiMoviesArray.length - 1) + 1;
@@ -305,5 +305,5 @@ $(document).ready(function() {
       console.log(response.Poster);
     });
   }
-  apiCall4();  
+  apiCall4();
 });
