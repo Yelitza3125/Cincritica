@@ -23,14 +23,17 @@
     word-break: break-word;
 }
 
-.arrow-right-button {
-    top: 160px;
+.poster-movie {
+    height: 300px;
 }
 
 /* Contenedor de la imagen */
 
-.image-div {
+.background-image-movie {
     background-image: url('../assets/images/comedia.jpg');
+}
+
+.image-div {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
