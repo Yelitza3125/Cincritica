@@ -9,6 +9,10 @@ body {
     background-color: #34c1bb;
 }
 
+hr {
+    border: 1px solid #fff;
+    margin-top: 5em;
+}
 /*Clases generales */
 
 .space-up {
@@ -17,6 +21,10 @@ body {
 
 .space-down {
     margin-bottom: 2em;
+}
+
+.text-center {
+ text-align: center;
 }
 
 /*imagen principal*/
