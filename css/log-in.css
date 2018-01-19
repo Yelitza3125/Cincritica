@@ -37,7 +37,6 @@ body {
 .card-panel {
     margin: auto;
     width: 40%;
-    border: 8px solid #ffda4d;
     padding: 2em;
 }
 
@@ -76,7 +75,7 @@ body {
     width: 150px;
 }
 .icons-movie-pop {
-    width: 30%;
+    width: 40%;
 }
 
 .icons-movie-camara {

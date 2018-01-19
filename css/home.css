@@ -39,6 +39,12 @@ body {
     padding: 0.5em;
 }
 
+/* Hover del header */
+
+ul li:hover {
+    color: #ffda4d;
+    border-bottom: 1px solid #ffda4d;
+}
 /*Botones*/
 
 .btn-log-in, .btn-sign-up, .modal-google:hover {
@@ -52,8 +58,6 @@ body {
     background-color: #ffda4d;
     color: #11135e;
     margin-left: 2em;
-    
-    
   
 }
 
