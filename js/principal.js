@@ -176,4 +176,18 @@ $(document).ready(function() {
       spacing: '10px'
     });
   });
+  var $randomScifiMoviesArray = ['E.T. the Extra-Terrestrial', 'Blade Runner', 'Alien', 'The Matrix'] ;
+  var $randomNumber1 = Math.floor(Math.random() * $randomScifiMoviesArray.length - 1) + 1;
+  var $randomMovie = $randomScifiMoviesArray[$randomNumber1];
+  console.log($randomMovie);
+  var $movieInfo;
+  function apiCall() {
+    $.getJSON('http://www.omdbapi.com/?apikey=3a181f1c&t=' + encodeURI($randomMovie)).then(function(response) {
+      console.log(response);
+      $movieInfo = response;
+    });
+  }
+  apiCall();
+  $moviePoster = $movieInfo['Poster'];
+  console.log($moviePoster);
 });

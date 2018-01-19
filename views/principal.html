@@ -14,54 +14,51 @@
 <body class="vh100">
     <!-- Encabezado -->
     <header class="">
-            <ul id="nav-mobile" class="side-nav fixed">
-                    
-                          <li><div class="user-view center-align">
-                          <div class="background">
-                          </div>
-                          <a href="principal.html"><img class="logo_sidenav" src="../assets/images/logotipo/logo-fondo-blanco.png"></a>
-                          <a href="#modal2" id="min-photo-user" class="waves-effect waves-light modal-trigger displayblock" ><span class="white-text" id="nicknametext"></span></a>
-                        </div></li>
-                        <li><a href="#!">Nosotros</a></li>
-                        <li><a href="#!">Contacto</a></li>
-                        <li><a href="#!">Blog</a></li>
-                        <li><div class="divider"></div></li>
-                        <li><a href="#!">INTERESES</a></li>
-                        <li><a href="#!">TOP10</a></li>
-                        <li><a href="#!">NUEVOS</a></li>
-                        <li><div class="divider"></div></li>
-                    
-                        <li><a href="../views/home.html" class="waves-effect" >Cerrar sesión</a></li>
-                    
-                      </ul>
-                        <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a>
-                    
-                        <!--modal perfil estructura-->
-                        <div id="modal2" class="modal modal-fixed-footer">
-                          <div class="modal-content">
-                            <h4>Tus datos: </h4>
-                            <div class="user-data">
-                                  <div class="panel panel-default">
-                                      <img id="my-photo" class="my-photo photoUser" src="">
-                                      <a><span class="white-text email" id="nicknametext"></span></a>
-                                  </div>
-                                              <div class="panel panel-default col  s4">
-                                    <div class="panel-heading">Name: </div>
-                                                      <div class="panel-body" id ="your-name">
-                                        <h6 id="user-name">Brenda Mesias</h6>
-                                                      </div>
-                                              </div>
-                                              <div class="panel panel-default col s8">
-                                                      <div class="panel-heading">Email: </div>
-                                                      <h6 id="user-email">brendamesias@gmail.com</h6>
-                                                      </div>
-                                              </div>
-                                  </div>
-                            <div class="modal-footer">
-                              <a class=" btn modal-action modal-close waves-effect waves-green btn-flat" type="button">Close</a>
-                            </div>
-                          </div>
+        <ul id="nav-mobile" class="side-nav fixed">
+            <li>
+                <div class="user-view center-align">
+                    <div class="background"></div>
+                    <a href="principal.html"><img class="logo_sidenav" src="../assets/images/logotipo/logo-fondo-blanco.png"></a>
+                    <a href="#modal2" id="min-photo-user" class="waves-effect waves-light modal-trigger displayblock" ><span class="white-text" id="nicknametext"></span></a>
+                </div>
+            </li>
+            <li><a href="#!">Nosotros</a></li>
+            <li><a href="#!">Contacto</a></li>
+            <li><a href="#!">Blog</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="#!">INTERESES</a></li>
+            <li><a href="#!">TOP10</a></li>
+            <li><a href="#!">NUEVOS</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="../views/home.html" class="waves-effect" >Cerrar sesión</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a>
+        <!--modal perfil estructura-->
+        <div id="modal2" class="modal modal-fixed-footer">
+            <div class="modal-content">
+                <h4>Tus datos: </h4>
+                <div class="user-data">                    
+                    <div class="panel panel-default">
+                        <img id="my-photo" class="my-photo photoUser" src="">
+                        <a><span class="white-text email" id="nicknametext"></span></a>
+                    </div>
+                    <div class="panel panel-default col  s4">
+                        <div class="panel-heading">Name: </div>
+                        <div class="panel-body" id ="your-name">
+                            <h6 id="user-name">Brenda Mesias</h6>
                         </div>
+                    </div>
+                    <div class="panel panel-default col s8">
+                        <div class="panel-heading">Email: </div>
+                        <h6 id="user-email">brendamesias@gmail.com</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a class=" btn modal-action modal-close waves-effect waves-green btn-flat" type="button">Close</a>
+            </div>
+        </div>
+    </div>
     </header>
     <div class="row">
         <div class="col s12 m12 l10 xl11 right slide-container">
@@ -99,7 +96,7 @@
                 <div class="col s6 m4 l4 xl3">
                   <div class="card new-carousel-content active" data-slide="0">
                     <div class="card-image">
-                      <img src="../assets/images/movie-slide-1.jpg">
+                      <img src="../assets/images/movie-slide-1.jpg" id="movie-1">
                     </div>
                     <div class="card-content">
                         <table>
@@ -124,7 +121,7 @@
                 <div class="col s6 m4 l4 xl3">
                     <div class="card new-carousel-content active" data-slide="1">
                       <div class="card-image">
-                        <img src="../assets/images/movie-slide-1.jpg">
+                        <img src="../assets/images/movie-slide-1.jpg" id="movie-2">
                       </div>
                       <div class="card-content">
                           <table>
@@ -149,7 +146,7 @@
                 <div class="col s6 m4 l4 xl3">
                     <div class="card new-carousel-content" data-slide="2">
                       <div class="card-image">
-                        <img src="../assets/images/movie-slide-1.jpg" class="" id="">
+                        <img src="../assets/images/movie-slide-1.jpg" class="" id="movie-3">
                       </div>
                       <div class="card-content">
                           <table>
@@ -174,7 +171,7 @@
                 <div class="col s6 m4 l4 xl3">
                     <div class="card new-carousel-content" data-slide="3">
                       <div class="card-image">
-                        <img src="../assets/images/movie-slide-1.jpg">
+                        <img src="../assets/images/movie-slide-1.jpg" id="movie-4">
                       </div>
                       <div class="card-content">
                             <table>
