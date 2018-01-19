@@ -1,92 +1,104 @@
-/* Estilos generales */
-
+/*clases generales*/
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.vh100{
+  height: 100vh !important;
 }
 
-.vh100 {
-    height: 100vh;
+.row {
+  margin-bottom: 0 !important;
 }
 
-.interests {
-    height: 100%;
+.maxwidth100{
+  max-width: 100%;
+  height: auto;
 }
 
-/* Estilos a la seccion de los filtros */
-
-.interests-section {
-    margin: 5.2em 0;
+.back-color-white {
+  background-color: #fff !important;
 }
 
-.interests-header {
-    background-color: #11135e;
-    color: #ffda4d;
+/* Estilo de la imagen */
+
+.img-container {
+  width: 60% !important;
 }
 
-.interests-header h1 {
-    margin: 0 0 1.68rem 0;
-    padding: 0.5em;
-    font-size: 3.8rem;
+.vh40 {
+  height: 40vh;
 }
 
-.interests-div {
-    color: yellow;
-    font-size: 1.8em;
-    height: 4em;
-    margin: 0 1em 2em;
-    background-color: #11135e;
-    word-break: break-word;
-    justify-content: center;
+.width70 {
+  width: 70%;
 }
 
-.interest-selected {
-    background-color: #11139b;
+.width50 {
+  width: 50% !important;
 }
 
-.button-container {
-    margin-top: 4.2em;
+.width20 {
+  width: 20%;
 }
 
-.button-container .btn {
-    font-size: 1.3rem;
-    background-color: #34c1bb;
-    height: 40px;
-    line-height: 40px;
-    padding: 0 2.2rem;
+.display-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (min-width: 600px){
-    .interests-section {
-        margin: 7em 0;
-    }
-
-    .interests-div {
-        font-size: 1.9em;
-        height: 5em;
-        width: 90%;
-    }
-
-    .button-container {
-        margin-top: 4.5em;
-    }
+.font-size {
+  font-size: 4em !important;
 }
 
-@media (min-width: 992px) {
-    .interests-div {
-        font-size: 2em;
-    }
-
-    .button-container {
-        margin-top: 7em;
-    }
+.text-carousel {
+  background-color: #11135e;
 }
 
-/* Estilos de la Vista Principal */
-
-.slider .slides li .principal-slide-2 {
-    background-position: top;
+.text-carousel-two {
+  background-color: #34c1bb;
 }
 
-.slider .slides li .principal-slide-1 {
-    background-position: bottom;
+.logo-container {
+  width: 80%;
+  margin-bottom: 4em;
+}
+
+.btn-carousel {
+  background-color: #ffda4d;
+  color: #11135e;
+}
+
+.green-color {
+  color: #34c1bb;
+}
+
+.back-img {
+  background-size: contain !important;
+  background-repeat: no-repeat !important; 
+}
+/* Mobile */
+
+.vh50 {
+  height: 50vh;
+}
+
+.vh35 {
+  height: 35vh;
+}
+
+.vh30 {
+  height: 30vh;
+}
+
+.space {
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+
+.img-corn-mobile {
+  width: 50%;
 }

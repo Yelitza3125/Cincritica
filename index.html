@@ -1,23 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>home</title>
-  <link rel="stylesheet" href="vendors/materialize/css/materialize.min.css">
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="vendors/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Vista carrusel</title>
 </head>
-<body>
+<body class="">
+    <div class="slider vh100">
+        <ul class="slides vh100 back-color-white">
+          <li class="row">
+         <!--silder-one -->
+         <div class="col s12 m4 l5 vh100 display-flex hide-on-small-only">
+            <div class="img-container display-flex ">
+              <img src="assets/images/vectores/mad.png" alt="" class="width70 center-align">
+            </div>
+          </div>
+          <!--Texto desktop -->
+          <div class="col s12 m8 l7 display-flex vh100 text-carousel hide-on-small-only">
+            <h2 class="font-size white-text">¿Cansado de los spoilers?</h2>
+          </div>
+          <!--imagen mobile-->
+          <div class="col s12">
+            <div class="display-flex vh50 hide-on-med-and-up space">
+              <img src="assets/images/vectores/mad.png" alt="" class="width50 center-align">
+            </div>
+          </div>
+          <!--Text-mobile-->
+          <div class="col s12 m8 l7 display-flex vh35 text-carousel hide-on-med-and-up">
+            <h4 class="white-text">¿Cansado de los spoilers?</h4>
+          </div>
 
-  <div id="player"></div>
+          </li>
+
+
+        <!--Slider dos -->
+
+            <li class="row">
+
+              <!--Imagen desktop-->
+              <div class="col s12 m4 l5 vh100 display-flex hide-on-small-only">
+                <div class="img-container display-flex vh40">
+                  <img src="assets/images/vectores/corn-red.png" alt="" class="width50 img-corn-mobile center-align">
+                </div>
+              </div>
+               <!--Texto desktop -->
+              <div class="col s12 m8 l7 display-flex vh100 text-carousel-two hide-on-small-only">
+                <h2 class="font-size white-text">Conviértete en un crítico</h2>
+              </div>
+              <!--imagen mobile-->
+              <div class="col s12">
+                <div class="display-flex vh50 hide-on-med-and-up space">
+                  <img src="assets/images/vectores/corn-red.png" alt="" class="width50 center-align">
+                </div>
+              </div>
+              <!--Text-mobile-->
+              <div class="col s12 m8 l7 display-flex vh35 text-carousel-two hide-on-med-and-up">
+                <h4 class="white-text">Conviértete en un crítico</h4>
+              </div>
+
+            </li>
+
+            <!--Slider tres -->
+            <li class="row">
+              <!--Texto desktop -->
+            <div class="col s12 m4 l5 vh100 display-flex hide-on-small-only btn-carousel">
+                <h2 class="font-size">Pero :)</h2>
+              </div>
+              <!--Imagen desktop-->
+              <div class="col s12 m8 l7 display-flex vh100  hide-on-small-only">
+                <div class="logo-container display-flex vh40">
+                  <img src="assets/images/logotipo/logo-fondo-blanco.png" alt="" class="back-img">
+                </div>
+              </div>
+              <!--Text-mobile-->
+              <div class="col s12 m8 l7 display-flex vh35 hide-on-med-and-up">
+                <h2 class="green-color">Pero :)</h2>
+              </div>
+              <!--imagen mobile-->
+              <div class="col s12">
+                <div class="display-flex vh30 hide-on-med-and-up space">
+                  <img src="assets/images/logotipo/logo-fondo-blanco.png" alt="" class="width20 center-align displayblock back-img">
+                </div>
+              </div>
+            </li>
+
+
+
+        </ul>
+    </div>
+
 
   <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
   <script src="vendors/materialize/js/materialize.min.js"></script>
-  <script src="js/auth.js"></script>
-  <script src="js/search.js"></script>
-  <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
-  <script src="js/index.js"></script>
-
+  <script src="js/app.js"></script>
 </body>
 </html>

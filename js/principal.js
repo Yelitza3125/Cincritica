@@ -1,8 +1,8 @@
 $(document).ready(function() {
   var $genreMovieTitle = $('#title');
   var $genreObjectKey = JSON.parse(localStorage.getItem('genre')); 
-  var $dataBase = $.getJSON('http://www.omdbapi.com/?apikey=3a181f1c&i=tt0083866');
-  console.log($database);
+  // var $dataBase = $.getJSON('http://www.omdbapi.com/?apikey=3a181f1c&i=tt0083866');
+  // console.log($database);
   for (var $i = 0; $i < $genreObjectKey['genre'].length; $i++) {
     if ($genreObjectKey['genre'][$i] === 'Comedy') {
       $genreMovieTitle.text('Comedia');

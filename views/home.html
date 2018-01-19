@@ -4,92 +4,81 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>home</title>
+  <title>Home</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/home.css">
 </head>
 <body class="vh100 valign-wrapper">
   <div class="container">
     <div class="row">
+      <ul class="display-flex space-down">
+        <li>Nosotros</li>
+        <li>Contacto</li>
+        <li>Blog</li>
+      </ul>
+    </div>
+    <div class="row">
       <div class="col s12 center-align">
-        <img src="http://lorempixel.com/400/200" alt="">
-        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Sing in</a>
-        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Sing up</a>
+        <img src="../assets/images/vectores/fondo.png" alt="" class="fondo-img space-down">
       </div>
-      <div class="row">
-        <div class="col s12 center-align">
-          <a class="waves-effect waves-light modal-trigger" href="#modal1">conectate con Google</a>
+    </div>
+    <div class="row space-up">
+      <div class="col s12 col l12 center-align">
+        <a href="log-in.html" class="waves-effect waves-light btn btn-log-in">Log in</a>
+        <a href="sign-up.html" class="waves-effect waves-light btn btn-sign-up">Sign up</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 center-align">
+        <a class="waves-effect waves-light modal-trigger btn modal-google" href="#modal1"  id="btn-signup">Conéctate con Google</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 1 Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Tus datos: </h4>
+      <p>Well Done! You have been registered succesfully.</p>
+      <div class="user-data">
+						<div class="panel panel-default col  s4">
+								<div class="panel-heading" >Name:</div>
+								<div class="panel-body" id ="your-name">
+
+								</div>
+						</div>
+						<div class="panel panel-default col s8">
+								<div class="panel-heading">Email: </div>
+								<div class="panel-body" id="your-email">
+
+								</div>
+						</div>
+						<div class="panel panel-default">
+								<div class="panel-body" id="your-photo">
+								</div>
+						</div>
+			</div>
+      <div id="inputNickname">
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="nicknameinput" type="text" class="validate">
+            <label for="nicknameinput" class="">Nickname (Números y letras, sin espacios)</label>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal modal-fixed-footer">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+      <button class=" btn modal-action modal-close waves-effect waves-green btn-flat" id="next-view" type="button" disabled>Next</button>
     </div>
   </div>
-
-  <!--
-	<section class="bckg vh100 container-flex-row">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<div class="description">
-						<p>Learn, share  and discover all about science and technology.</p>
-					</div>
-					<div class="container-btns">
-							<button class="btn btn-outline col-xs-6 col-xs-offset-3" id="btn-modal">LOG IN</button>
-							<button class="btn btn-outline col-xs-6 col-xs-offset-3" id="btn-signup"><i class="fa fa-google-plus" aria-hidden="true"></i>SIGN UP</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
--->
-
-	<!-- Modal que muestra datos de inicio de sesión-->
-  <!--
-
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-		<div class="modal-dialog" role="document">
-		  <div class="modal-content">
-			<div class="modal-body">
-					<div class="user-data">
-							<div class="panel panel-default col-xs-4">
-									<div class="panel-heading" >Name:</div>
-									<div class="panel-body" id ="your-name">
-									  Panel content
-									</div>
-							</div>
-							<div class="panel panel-default col-xs-8">
-									<div class="panel-heading">Email</div>
-									<div class="panel-body" id="your-email">
-									  Panel content
-									</div>
-							</div>
-							<div class="panel panel-default">
-									<div class="panel-body" id="your-photo">
-									</div>
-							</div>
-			</div>
-			<div class="modal-footer">
-			  <button type="button" id="next-view" class="btn btn-success">NEXT</button>
-			</div>
-		  </div>
-		</div>
-	  </div>
-  -->
 
   <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
   <script src="../vendors/materialize/js/materialize.min.js"></script>
-  <script src="../js/home.js">
-
-  </script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+  <script src="../js/home.js"></script>
 </body>
 </html>
