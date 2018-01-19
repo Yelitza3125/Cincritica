@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   $('.interests-div').addClass('animated rollIn');
   var $interestsOption1 = $('#option-1');
   var $interestsOptions = document.querySelectorAll('.interests-div');
