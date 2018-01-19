@@ -3,12 +3,12 @@
    height: 100vh;
   }
 
-  .rosa {
-    background: #FF5252;
-    background: -webkit-linear-gradient(45deg, #FF5252 0%, #f48fb1 100%);
-    background: linear-gradient(45deg, #FF5252 0%, #f48fb1 100%);
-    border: none;
-    border-radius: 50px;
+  .star {
+    display: inline-block;
+  }
+  
+  .letter-green {
+    color: #34c1bb;
   }
 
   .top {
