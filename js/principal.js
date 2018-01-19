@@ -17,23 +17,6 @@ $(document).ready(function() {
       $genreMovieTitle.text('Ciencia Ficción');
     }
   }
-  // Creando carrusel de películas
-  /* var $target = 0;
-  var $nextButtonCarrousel = $('.arrow-right-button');
-  $nextButtonCarrousel.click(function() {
-    event.preventDefault();
-    $target = $target + 1;
-    $target = ($target > 4) ? 0 : $target;
-    $showImage($target);
-  });
-  var $showImage = function($target) {
-    var $lastSlide = $('div.active');
-    var $slide = $('div[data-slide="' + $target + '"]');
-    $lastSlide.eq(0).removeClass('active');
-    $slide.addClass('active');
-    $lastSlide.push($slide);
-  }; */
-  
   // Menú Hamburguesa
   $('.button-collapse').sideNav();    
   // Slider

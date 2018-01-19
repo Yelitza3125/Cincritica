@@ -16,13 +16,3 @@ $(document).ready(function() {
   });
 });
 
-/*
- $selection.one('dblclick', function() {
-    debugger;
-    var $thisOption = $(this).data('genre');
-    $(this).removeClass('interest-selected');
-    var $array = $genreObject.genre;
-    $array.indexOf($thisOption);
-    console.log($thisOption);
-  });
-*/ 
