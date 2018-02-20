@@ -1,9 +1,9 @@
 
-# Cincrítica
+# Cincritica
 
 Aplicación responsive para los usuarios amantes del cine. Consiste en un sistema de calificación y recomendación de películas libres de spoilers. Desarrollado a partir de un proceso de UX-Research y con la aplicación de la API Open Movie Data Base, para la obtención de la data de las películas.
 
-![cincrítica](https://user-images.githubusercontent.com/32287220/36419164-1d87b010-15ff-11e8-9be3-445dc7cf2c6d.png)
+![cincritica](https://user-images.githubusercontent.com/32287220/36419164-1d87b010-15ff-11e8-9be3-445dc7cf2c6d.png)
 
 
 ## Desarrollado para
